@@ -57,7 +57,7 @@
 
         .stanza {
             font-size: 1rem;
-            line-height: 2.2;
+            line-height: 1.8;
         }
 
         .stanza-below {
@@ -78,8 +78,34 @@
             padding-left: 1rem;
         }
 
-        .line {
-            margin: 0.5rem 0;
+        details {
+            margin: 0.8rem 0;
+        }
+
+        summary {
+            cursor: pointer;
+            color: #60A5FA;
+            font-size: 0.9rem;
+            list-style: none;
+        }
+
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        summary::before {
+            content: "▶ ";
+            font-size: 0.7rem;
+            margin-right: 0.3rem;
+        }
+
+        details[open] summary::before {
+            content: "▼ ";
+        }
+
+        .text-content {
+            margin-top: 0.3rem;
+            padding-left: 1rem;
         }
 
         .italian {
@@ -87,15 +113,11 @@
             color: #f5f5f5;
         }
 
-        .separator {
-            color: #6B7280;
-            margin: 0 0.75rem;
-        }
-
-        .locus {
-            color: #60A5FA;
-            font-style: normal;
-            font-size: 0.9rem;
+        .english {
+            color: #9CA3AF;
+            font-size: 0.85rem;
+            display: block;
+            margin-top: 0.1rem;
         }
 
         nav {
@@ -163,8 +185,17 @@
                 color: black;
             }
 
-            .locus {
+            summary {
                 color: #2563EB;
+            }
+
+            details {
+                display: block;
+            }
+
+            details[open] .text-content,
+            .text-content {
+                display: block !important;
             }
         }
     </style>
@@ -187,40 +218,52 @@
             </div>
 
             <div class="stanza stanza-right">
-                <div class="line">
-                    <span class="italian">guardai in alto e vidi le sue spalle</span>
-                    <span class="separator">::</span>
-                    <span class="locus">high-backed leather chair</span>
-                </div>
-                <div class="line">
-                    <span class="italian">vestite già de' raggi del pianeta</span>
-                    <span class="separator">::</span>
-                    <span class="locus">tall arched window</span>
-                </div>
-                <div class="line">
-                    <span class="italian">che mena dritto altrui per ogne calle.</span>
-                    <span class="separator">::</span>
-                    <span class="locus">wall-mounted gas lamp</span>
-                </div>
+                <details>
+                    <summary>high-backed leather chair</summary>
+                    <div class="text-content">
+                        <span class="italian">guardai in alto e vidi le sue spalle</span>
+                        <span class="english">Upward I looked, and I beheld its shoulders,</span>
+                    </div>
+                </details>
+                <details>
+                    <summary>tall arched window</summary>
+                    <div class="text-content">
+                        <span class="italian">vestite già de' raggi del pianeta</span>
+                        <span class="english">Vested already with that planet's rays</span>
+                    </div>
+                </details>
+                <details>
+                    <summary>wall-mounted gas lamp</summary>
+                    <div class="text-content">
+                        <span class="italian">che mena dritto altrui per ogne calle.</span>
+                        <span class="english">Which leadeth others right by every road.</span>
+                    </div>
+                </details>
             </div>
 
             <div class="stanza stanza-below">
                 <div class="stanza-inner">
-                    <div class="line">
-                        <span class="italian">Ma poi ch'i' fui al piè d'un colle giunto,</span>
-                        <span class="separator">::</span>
-                        <span class="locus">brass candlestick with pooled wax</span>
-                    </div>
-                    <div class="line">
-                        <span class="italian">là dove terminava quella valle</span>
-                        <span class="separator">::</span>
-                        <span class="locus">wax seals</span>
-                    </div>
-                    <div class="line">
-                        <span class="italian">che m'avea di paura il cor compunto,</span>
-                        <span class="separator">::</span>
-                        <span class="locus">open filing cabinet</span>
-                    </div>
+                    <details>
+                        <summary>brass candlestick with pooled wax</summary>
+                        <div class="text-content">
+                            <span class="italian">Ma poi ch'i' fui al piè d'un colle giunto,</span>
+                            <span class="english">But after I had reached a mountain's foot,</span>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>wax seals</summary>
+                        <div class="text-content">
+                            <span class="italian">là dove terminava quella valle</span>
+                            <span class="english">At that point where the valley terminated,</span>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>open filing cabinet</summary>
+                        <div class="text-content">
+                            <span class="italian">che m'avea di paura il cor compunto,</span>
+                            <span class="english">Which had with consternation pierced my heart,</span>
+                        </div>
+                    </details>
                 </div>
             </div>
         </div>

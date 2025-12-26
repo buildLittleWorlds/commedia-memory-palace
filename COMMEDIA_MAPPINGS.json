@@ -25,6 +25,12 @@
         "previous": null,
         "next": "inf-1-002"
       },
+      "narrative_source": {
+        "event_id": null,
+        "description": null,
+        "actors": [],
+        "date": null
+      },
       "generation": {
         "model": "nano_banana_pro",
         "date": "2025-12-26",
@@ -104,6 +110,12 @@
       "adjacent": {
         "previous": "inf-1-001",
         "next": "inf-1-003"
+      },
+      "narrative_source": {
+        "event_id": null,
+        "description": null,
+        "actors": [],
+        "date": null
       },
       "generation": {
         "model": "nano_banana_pro",
@@ -185,6 +197,12 @@
         "previous": "inf-1-002",
         "next": "inf-1-004"
       },
+      "narrative_source": {
+        "event_id": null,
+        "description": null,
+        "actors": [],
+        "date": null
+      },
       "generation": {
         "model": "nano_banana_pro",
         "date": "2025-12-26",
@@ -265,6 +283,12 @@
         "previous": "inf-1-003",
         "next": "inf-1-005"
       },
+      "narrative_source": {
+        "event_id": null,
+        "description": null,
+        "actors": [],
+        "date": null
+      },
       "generation": {
         "model": "nano_banana_pro",
         "date": "2025-12-26",
@@ -343,7 +367,7 @@
       "html_file": "inferno1-1/lines-25-30.html",
       "adjacent": {
         "previous": "inf-1-004",
-        "next": null
+        "next": "inf-1-006"
       },
       "narrative_source": {
         "event_id": "EV-855-001",
@@ -413,6 +437,92 @@
       },
       "revision_history": [],
       "created": "2025-12-26"
+    },
+    {
+      "id": "inf-1-006",
+      "sequence": 6,
+      "cantica": "inferno",
+      "canto": 1,
+      "lines": [31, 36],
+      "tercets": [11, 12],
+      "region": "Focal Meadow",
+      "sub_location": "Crater rim, terminal observation site (Year 799)",
+      "time_of_day": "dusk",
+      "weather": "clear",
+      "image_file": "inferno1-1/lines-31-36.png",
+      "html_file": "inferno1-1/lines-31-36.html",
+      "adjacent": {
+        "previous": "inf-1-005",
+        "next": null
+      },
+      "narrative_source": {
+        "event_id": "EV-799-001",
+        "description": "Nelphl's terminal observation at the Focal Meadow crater; Bincher witnesses the ending",
+        "actors": ["Nelphl", "Bincher", "Metal-Beaked Finch"],
+        "date": "799-08-12"
+      },
+      "generation": {
+        "model": "nano_banana_pro",
+        "date": "2025-12-26",
+        "prompt_text": "A unified exterior illustration of the Focal Meadow crater rim at dusk, Year 799, viewed from behind Bincher as she witnesses Nelphl's final moments. In the foreground on the left, Bincher's leather-bound field journal lies open on the grass, her handwriting trailing off mid-sentence. In the center foreground, dried fish wrapped in cloth—her uneaten meal—sits beside the journal, forgotten. To the right foreground, a Metal-Beaked Finch perches on a stone, its distinctive iron-colored beak tilted toward the crater. In the middle distance on the right side, Nelphl kneels at the crater's edge, her loose dark hair falling across her face as she leans forward. At center back, the smooth rim of the Focal Meadow crater curves away, its surface impossibly regular, the depression beyond filled with evening shadow. On the left in the background, Bincher herself stands frozen, one arm raised as if to call out or reach—but it's too late. The meadow grass ripples in a wind that seems to pull toward the crater. The sky is copper and gray. Something is ending. The color palette draws from Densworld materials: Meadow Oxidized Copper (#78350F) for the evening sky and grass shadows, Dead River Silt Gray (#78716C) for the crater rim, Iron Gall Black (#1F2937) for the deepening shadows, Quarry Ochre (#B45309) for the warm light on skin and cloth. Cartographic illustration style with clean lines, unified lighting from the setting sun, deep focus keeping all elements sharp. Aspect ratio 16:9. One continuous scene, not separate panels. Six distinct objects clearly separated by negative space. No title banners or labels."
+      },
+      "objects": [
+        {
+          "position": 1,
+          "description": "Bincher's field journal",
+          "category": "documents",
+          "placement": "left foreground",
+          "line": 31,
+          "text": "Ed ecco, quasi al cominciar de l'erta,"
+        },
+        {
+          "position": 2,
+          "description": "dried fish on cloth",
+          "category": "food/drink",
+          "placement": "center foreground",
+          "line": 32,
+          "text": "una lonza leggera e presta molto,"
+        },
+        {
+          "position": 3,
+          "description": "Metal-Beaked Finch",
+          "category": "creatures",
+          "placement": "right foreground",
+          "line": 33,
+          "text": "che di pel macolato era coverta;"
+        },
+        {
+          "position": 4,
+          "description": "Nelphl's loose hair",
+          "category": "figures",
+          "placement": "right background",
+          "line": 34,
+          "text": "e non mi si partia dinanzi al volto,"
+        },
+        {
+          "position": 5,
+          "description": "crater's smooth edge",
+          "category": "nature",
+          "placement": "center background",
+          "line": 35,
+          "text": "anzi 'mpediva tanto il mio cammino,"
+        },
+        {
+          "position": 6,
+          "description": "Bincher's raised arm",
+          "category": "figures",
+          "placement": "left background",
+          "line": 36,
+          "text": "ch'i' fui per ritornar più volte vòlto."
+        }
+      ],
+      "recall": {
+        "difficulty": null,
+        "problem_loci": [],
+        "notes": null
+      },
+      "revision_history": [],
+      "created": "2025-12-26"
     }
   ],
   "object_registry": {
@@ -420,19 +530,20 @@
     "equipment": ["rope coil with stake", "telescope on tripod", "rusted mooring cleat", "ferryman's punt"],
     "fire": ["cooking fire with pot", "wall-mounted gas lamp", "tin lantern", "shattered lantern"],
     "military": ["siege ladder on crates", "torn regimental banner"],
-    "documents": ["open ledger with quill", "wax seals"],
+    "documents": ["open ledger with quill", "wax seals", "Bincher's field journal"],
     "tools": ["pickaxe", "red-gripped trapping hook"],
-    "food/drink": ["tin lunch pail"],
-    "nature": ["gnarled tree roots", "crumbling canyon floor", "Prime Yeller veins"],
+    "food/drink": ["tin lunch pail", "dried fish on cloth"],
+    "nature": ["gnarled tree roots", "crumbling canyon floor", "Prime Yeller veins", "crater's smooth edge"],
     "furniture": ["brass candlestick with pooled wax", "open filing cabinet", "high-backed leather chair"],
     "architecture": ["tall arched window", "shanty pylons", "Broken Deadriver Bridge"],
-    "creatures": ["Gritsmuck Crawler", "Maw Beast silhouette"],
-    "figures": ["Ox's hands on Truck's collar", "maze-braided red hair"]
+    "creatures": ["Gritsmuck Crawler", "Maw Beast silhouette", "Metal-Beaked Finch"],
+    "figures": ["Ox's hands on Truck's collar", "maze-braided red hair", "Nelphl's loose hair", "Bincher's raised arm"]
   },
   "region_usage": {
     "Tower of Mirado": ["inf-1-001"],
     "Yeller Quarry": ["inf-1-002", "inf-1-005"],
     "Capital": ["inf-1-003"],
-    "Dead River": ["inf-1-004"]
+    "Dead River": ["inf-1-004"],
+    "Focal Meadow": ["inf-1-006"]
   }
 }

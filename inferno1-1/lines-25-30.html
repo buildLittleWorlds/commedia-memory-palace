@@ -57,7 +57,7 @@
 
         .stanza {
             font-size: 1rem;
-            line-height: 2.2;
+            line-height: 1.8;
         }
 
         .stanza-below {
@@ -78,8 +78,34 @@
             padding-left: 1rem;
         }
 
-        .line {
-            margin: 0.5rem 0;
+        details {
+            margin: 0.8rem 0;
+        }
+
+        summary {
+            cursor: pointer;
+            color: #60A5FA;
+            font-size: 0.9rem;
+            list-style: none;
+        }
+
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        summary::before {
+            content: "▶ ";
+            font-size: 0.7rem;
+            margin-right: 0.3rem;
+        }
+
+        details[open] summary::before {
+            content: "▼ ";
+        }
+
+        .text-content {
+            margin-top: 0.3rem;
+            padding-left: 1rem;
         }
 
         .italian {
@@ -87,15 +113,11 @@
             color: #f5f5f5;
         }
 
-        .separator {
-            color: #6B7280;
-            margin: 0 0.75rem;
-        }
-
-        .locus {
-            color: #60A5FA;
-            font-style: normal;
-            font-size: 0.9rem;
+        .english {
+            color: #9CA3AF;
+            font-size: 0.85rem;
+            display: block;
+            margin-top: 0.1rem;
         }
 
         nav {
@@ -163,8 +185,17 @@
                 color: black;
             }
 
-            .locus {
+            summary {
                 color: #2563EB;
+            }
+
+            details {
+                display: block;
+            }
+
+            details[open] .text-content,
+            .text-content {
+                display: block !important;
             }
         }
     </style>
@@ -187,40 +218,52 @@
             </div>
 
             <div class="stanza stanza-right">
-                <div class="line">
-                    <span class="italian">Poi ch'èi posato un poco il corpo lasso,</span>
-                    <span class="separator">::</span>
-                    <span class="locus">Maw Beast silhouette</span>
-                </div>
-                <div class="line">
-                    <span class="italian">ripresi via per la piaggia diserta,</span>
-                    <span class="separator">::</span>
-                    <span class="locus">Prime Yeller veins</span>
-                </div>
-                <div class="line">
-                    <span class="italian">sì che 'l piè fermo sempre era 'l più basso.</span>
-                    <span class="separator">::</span>
-                    <span class="locus">maze-braided red hair</span>
-                </div>
+                <details>
+                    <summary>Maw Beast silhouette</summary>
+                    <div class="text-content">
+                        <span class="italian">Poi ch'èi posato un poco il corpo lasso,</span>
+                        <span class="english">After my weary body I had rested,</span>
+                    </div>
+                </details>
+                <details>
+                    <summary>Prime Yeller veins</summary>
+                    <div class="text-content">
+                        <span class="italian">ripresi via per la piaggia diserta,</span>
+                        <span class="english">The way resumed I on the desert slope,</span>
+                    </div>
+                </details>
+                <details>
+                    <summary>maze-braided red hair</summary>
+                    <div class="text-content">
+                        <span class="italian">sì che 'l piè fermo sempre era 'l più basso.</span>
+                        <span class="english">So that the firm foot ever was the lower.</span>
+                    </div>
+                </details>
             </div>
 
             <div class="stanza stanza-below">
                 <div class="stanza-inner">
-                    <div class="line">
-                        <span class="italian">così l'animo mio, ch'ancor fuggiva,</span>
-                        <span class="separator">::</span>
-                        <span class="locus">Ox's hands on Truck's collar</span>
-                    </div>
-                    <div class="line">
-                        <span class="italian">si volse a retro a rimirar lo passo</span>
-                        <span class="separator">::</span>
-                        <span class="locus">shattered lantern</span>
-                    </div>
-                    <div class="line">
-                        <span class="italian">che non lasciò già mai persona viva.</span>
-                        <span class="separator">::</span>
-                        <span class="locus">red-gripped trapping hook</span>
-                    </div>
+                    <details>
+                        <summary>Ox's hands on Truck's collar</summary>
+                        <div class="text-content">
+                            <span class="italian">così l'animo mio, ch'ancor fuggiva,</span>
+                            <span class="english">So did my soul, that still was fleeing onward,</span>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>shattered lantern</summary>
+                        <div class="text-content">
+                            <span class="italian">si volse a retro a rimirar lo passo</span>
+                            <span class="english">Turn itself back to re-behold the pass</span>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>red-gripped trapping hook</summary>
+                        <div class="text-content">
+                            <span class="italian">che non lasciò già mai persona viva.</span>
+                            <span class="english">Which never yet a living person left.</span>
+                        </div>
+                    </details>
                 </div>
             </div>
         </div>

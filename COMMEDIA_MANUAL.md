@@ -150,10 +150,22 @@ HTML structure:
 - First tercet below image (left-justified, centered as block)
 - Second tercet to right of image
 
-Each line formatted as:
+Each line uses `<details>/<summary>` for **quiz mode**:
+- Locus label visible by default (clickable)
+- Italian + English text hidden until clicked
+- Visual indicators: ▶ collapsed, ▼ expanded
+
+```html
+<details>
+    <summary>satchel with rolled maps</summary>
+    <div class="text-content">
+        <span class="italian">Nel mezzo del cammin di nostra vita</span>
+        <span class="english">Midway upon the journey of our life</span>
+    </div>
+</details>
 ```
-[Italian line] :: [object description]
-```
+
+**Quiz workflow:** Look at image → recall line for each locus → click to verify.
 
 ### Step 10: Update the JSON
 
@@ -219,11 +231,18 @@ _mnemonic-system/
 ├── W1_W2_REFRAME.md            ← W1/W2 framework documentation
 ├── ART_OF_MEMORY_SUMMARY.md    ← Memory palace techniques
 ├── EXPERIMENT_LOG.md           ← Image generation experiments
+├── LOCUS_PLACEMENT_GUIDE.md    ← Zone-based object placement
+├── _prompt-sources/
+│   └── PROMPT_ENRICHMENT_PROCESS.md  ← How to enrich prompts with lore
+├── _source-texts/
+│   ├── inferno_italian.txt     ← Clean Italian (4,721 lines, by canto)
+│   ├── inferno_longfellow.txt  ← Longfellow translation (4,721 lines)
+│   └── extract_inferno.py      ← Extraction script
 ├── inferno1-1/
-│   ├── lines-1-6.png
+│   ├── images/lines-1-6.png
 │   └── lines-1-6.html
 ├── inferno1-2/
-│   ├── lines-7-12.png
+│   ├── images/lines-7-12.png
 │   └── lines-7-12.html
 └── ...
 ```
@@ -278,3 +297,9 @@ This is narrative material, not tracking data. It becomes part of the world.
 ---
 
 *Last updated: 2025-12-26*
+
+---
+
+## Changelog
+
+- **2025-12-26:** Added quiz mode (details/summary) to all HTML pages; added Longfellow translations; extracted source texts to `_source-texts/`; documented LOCUS_PLACEMENT_GUIDE.md and PROMPT_ENRICHMENT_PROCESS.md

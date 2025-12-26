@@ -38,25 +38,42 @@ For the selected region, gather:
 - What patterns or phenomena affect this region?
 - Center/margins dynamic? Oscillating dimensions? Institutional presence?
 
-### Step 2: Find a Narrative Anchor
+### Step 2: Find a Narrative Anchor (CRITICAL)
 
-Every image needs a **moment**, not an arrangement. Ask:
+**Best approach: Use an actual event from the Living Ledger.**
 
+Search `EVENT_LOG.jsonl` for dramatic events:
+- Deaths, disappearances, creature attacks
+- Expeditions, discoveries, failures
+- Named characters in crisis moments
+
+**Example (inf-1-005):** Event EV-855-001 — Truck's death defending the Boss from a Maw Beast in Yeller Quarry cave. The image depicts the moment after the attack: Ox dragging Truck's body, the Boss crumpled against the wall, the Maw Beast retreating into shadow.
+
+This gives you:
+- Named characters (Ox, Truck, the Boss)
+- A specific creature (Maw Beast)
+- A dramatic moment with before/after
+- Objects that belong to someone (the Boss's red-gripped trapping hook)
+
+**If no Ledger event fits, create a moment:**
+
+Ask:
 - Who was just here?
 - What were they doing?
 - Why did they leave?
 - What evidence remains?
 
 **Good anchors:**
+- A Ledger event with named actors and creatures (BEST)
 - A novice fled mid-trial, leaving belongings
 - A ferryman abandoned his post at the sound from the bridge
 - An archivist fell asleep at their desk, candle burning down
-- A Gritsmuck Crawler picked through debris left by a departing expedition
 
 **Bad anchors:**
 - Objects arranged for viewing
 - A "scene" with no implied before/after
 - Generic location with generic objects
+- No human figures or creatures
 
 ### Step 3: Source Specific Objects
 
