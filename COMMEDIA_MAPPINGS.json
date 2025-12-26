@@ -201,7 +201,7 @@
         },
         {
           "position": 2,
-          "description": "inkwell with wax seals",
+          "description": "wax seals",
           "category": "documents",
           "placement": "center foreground",
           "line": 14,
@@ -254,7 +254,7 @@
     "equipment": ["rope coil with stake", "telescope on tripod"],
     "fire": ["cooking fire with pot", "wall-mounted gas lamp"],
     "military": ["siege ladder on crates", "torn regimental banner"],
-    "documents": ["open ledger with quill", "inkwell with wax seals"],
+    "documents": ["open ledger with quill", "wax seals"],
     "tools": ["pickaxe"],
     "food/drink": ["tin lunch pail"],
     "nature": ["gnarled tree roots", "crumbling canyon floor"],
