@@ -68,8 +68,9 @@ Prefer objects that are spatially separated from each other. A well-spaced path 
 2. **Spatial separation** — Objects should not be adjacent; prefer spread across the image
 3. **Distinctness** — Each object should be visually unique
 4. **One object per locus** — Never combine two objects into one locus (e.g., "inkwell with wax seals" is wrong—choose either "inkwell" OR "wax seals", not both)
-5. **No recent repeats** — Avoid objects used within the last week (~7 images)
-6. **Long-term uniqueness** — Ideally, objects are unique across the entire project (this becomes harder over time)
+5. **Tight visual anchors** — The locus must be a specific point the eye can land on, not a whole scene or action. "Ox dragging Truck" is too large—use "Ox's hands pulling Truck's shirt." "The Boss" is a whole person—use "maze-braided red hair" or "the Boss's raised arm."
+6. **No recent repeats** — Avoid objects used within the last week (~7 images)
+7. **Long-term uniqueness** — Ideally, objects are unique across the entire project (this becomes harder over time)
 
 ---
 

@@ -359,7 +359,7 @@
       "objects": [
         {
           "position": 1,
-          "description": "Ox dragging Truck",
+          "description": "Ox's hands on Truck's collar",
           "category": "figures",
           "placement": "left foreground",
           "line": 25,
@@ -399,7 +399,7 @@
         },
         {
           "position": 6,
-          "description": "the Boss (red hair)",
+          "description": "maze-braided red hair",
           "category": "figures",
           "placement": "left background",
           "line": 30,
@@ -427,7 +427,7 @@
     "furniture": ["brass candlestick with pooled wax", "open filing cabinet", "high-backed leather chair"],
     "architecture": ["tall arched window", "shanty pylons", "Broken Deadriver Bridge"],
     "creatures": ["Gritsmuck Crawler", "Maw Beast silhouette"],
-    "figures": ["Ox dragging Truck", "the Boss (red hair)"]
+    "figures": ["Ox's hands on Truck's collar", "maze-braided red hair"]
   },
   "region_usage": {
     "Tower of Mirado": ["inf-1-001"],
