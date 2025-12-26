@@ -23,7 +23,7 @@
         .journey {
             position: relative;
             width: 600px;
-            height: 750px;
+            height: 900px;
         }
 
         .path {
@@ -85,12 +85,17 @@
             top: 600px;
             left: 160px;
         }
+
+        .icon-6 {
+            top: 750px;
+            left: 380px;
+        }
     </style>
 </head>
 <body>
     <div class="journey">
         <!-- Dotted path with arrows -->
-        <svg class="path" viewBox="0 0 600 750" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="path" viewBox="0 0 600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
             <!-- Arrow marker definition -->
             <defs>
                 <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
@@ -145,6 +150,18 @@
                 stroke-linecap="round"
                 marker-end="url(#arrowhead)"
             />
+
+            <!-- Path from icon 5 to icon 6 -->
+            <path
+                d="M 240 640
+                   C 290 690, 320 720, 360 750
+                   Q 390 770, 400 790"
+                stroke="#6B7280"
+                stroke-width="2"
+                stroke-dasharray="8 6"
+                stroke-linecap="round"
+                marker-end="url(#arrowhead)"
+            />
         </svg>
 
         <!-- Icon 1: Tower (Lines 1-6) -->
@@ -170,6 +187,11 @@
         <!-- Icon 5: Hook (Lines 25-30) -->
         <a href="inferno1-1/lines-25-30.html" class="icon icon-5">
             <img src="inferno1-1/home-icons/hook.png" alt="Maw Beast Attack">
+        </a>
+
+        <!-- Icon 6: Crater (Lines 31-36) -->
+        <a href="inferno1-1/lines-31-36.html" class="icon icon-6">
+            <img src="inferno1-1/home-icons/crater.png" alt="Focal Meadow Crater">
         </a>
     </div>
 </body>
