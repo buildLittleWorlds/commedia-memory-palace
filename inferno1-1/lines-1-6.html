@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inferno I, 1-6 | Siege of Mirado</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background: #1a1a1a;
+            color: #e5e5e5;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        header h1 {
+            font-size: 1.3rem;
+            font-weight: normal;
+            color: #CA8A04;
+            letter-spacing: 0.1em;
+        }
+
+        .layout {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            grid-template-rows: auto auto;
+            gap: 2rem;
+        }
+
+        .image-section {
+            grid-column: 1;
+            grid-row: 1;
+            text-align: center;
+        }
+
+        .image-section img {
+            max-width: 900px;
+            width: 100%;
+            border: 1px solid #444;
+        }
+
+        .stanza {
+            font-size: 1rem;
+            line-height: 2.2;
+        }
+
+        .stanza-below {
+            grid-column: 1;
+            grid-row: 2;
+            display: flex;
+            justify-content: center;
+        }
+
+        .stanza-below .stanza-inner {
+            text-align: left;
+        }
+
+        .stanza-right {
+            grid-column: 2;
+            grid-row: 1;
+            padding-top: 1rem;
+            padding-left: 1rem;
+        }
+
+        .line {
+            margin: 0.5rem 0;
+        }
+
+        .italian {
+            font-style: italic;
+            color: #f5f5f5;
+        }
+
+        .separator {
+            color: #6B7280;
+            margin: 0 0.75rem;
+        }
+
+        .locus {
+            color: #60A5FA;
+            font-style: normal;
+            font-size: 0.9rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #333;
+        }
+
+        nav a {
+            color: #9CA3AF;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: #CA8A04;
+        }
+
+        nav .prev,
+        nav .next {
+            min-width: 100px;
+        }
+
+        nav .prev {
+            text-align: left;
+        }
+
+        nav .next {
+            text-align: right;
+        }
+
+        nav .home {
+            color: #CA8A04;
+        }
+
+        .disabled {
+            color: #4B5563 !important;
+            cursor: default;
+        }
+
+        @media (max-width: 1100px) {
+            .layout {
+                grid-template-columns: 1fr;
+            }
+
+            .stanza-right {
+                grid-column: 1;
+                grid-row: 3;
+                padding-left: 0;
+                text-align: center;
+            }
+        }
+
+        @media print {
+            body {
+                background: white;
+                color: black;
+            }
+
+            .italian {
+                color: black;
+            }
+
+            .locus {
+                color: #2563EB;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <span class="prev disabled">&larr; prev</span>
+            <a href="../index.html" class="home">index</a>
+            <a href="lines-7-12.html" class="next">next &rarr;</a>
+        </nav>
+
+        <header>
+            <h1>Inferno I, 1-6</h1>
+        </header>
+
+        <div class="layout">
+            <div class="image-section">
+                <img src="images/lines-1-6.png" alt="Siege of Mirado camp">
+            </div>
+
+            <div class="stanza stanza-right">
+                <div class="line">
+                    <span class="italian">Ahi quanto a dir qual era è cosa dura</span>
+                    <span class="separator">::</span>
+                    <span class="locus">cooking fire with pot</span>
+                </div>
+                <div class="line">
+                    <span class="italian">esta selva selvaggia e aspra e forte</span>
+                    <span class="separator">::</span>
+                    <span class="locus">siege ladder on crates</span>
+                </div>
+                <div class="line">
+                    <span class="italian">che nel pensier rinova la paura!</span>
+                    <span class="separator">::</span>
+                    <span class="locus">torn regimental banner</span>
+                </div>
+            </div>
+
+            <div class="stanza stanza-below">
+                <div class="stanza-inner">
+                    <div class="line">
+                        <span class="italian">Nel mezzo del cammin di nostra vita</span>
+                        <span class="separator">::</span>
+                        <span class="locus">satchel with rolled maps</span>
+                    </div>
+                    <div class="line">
+                        <span class="italian">mi ritrovai per una selva oscura,</span>
+                        <span class="separator">::</span>
+                        <span class="locus">clay bowl of maize</span>
+                    </div>
+                    <div class="line">
+                        <span class="italian">ché la diritta via era smarrita.</span>
+                        <span class="separator">::</span>
+                        <span class="locus">rope coil with stake</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

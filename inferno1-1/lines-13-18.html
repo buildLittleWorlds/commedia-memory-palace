@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inferno I, 13-18 | Capital Archive</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background: #1a1a1a;
+            color: #e5e5e5;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        header h1 {
+            font-size: 1.3rem;
+            font-weight: normal;
+            color: #CA8A04;
+            letter-spacing: 0.1em;
+        }
+
+        .layout {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            grid-template-rows: auto auto;
+            gap: 2rem;
+        }
+
+        .image-section {
+            grid-column: 1;
+            grid-row: 1;
+            text-align: center;
+        }
+
+        .image-section img {
+            max-width: 900px;
+            width: 100%;
+            border: 1px solid #444;
+        }
+
+        .stanza {
+            font-size: 1rem;
+            line-height: 2.2;
+        }
+
+        .stanza-below {
+            grid-column: 1;
+            grid-row: 2;
+            display: flex;
+            justify-content: center;
+        }
+
+        .stanza-below .stanza-inner {
+            text-align: left;
+        }
+
+        .stanza-right {
+            grid-column: 2;
+            grid-row: 1;
+            padding-top: 1rem;
+            padding-left: 1rem;
+        }
+
+        .line {
+            margin: 0.5rem 0;
+        }
+
+        .italian {
+            font-style: italic;
+            color: #f5f5f5;
+        }
+
+        .separator {
+            color: #6B7280;
+            margin: 0 0.75rem;
+        }
+
+        .locus {
+            color: #60A5FA;
+            font-style: normal;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 1100px) {
+            .layout {
+                grid-template-columns: 1fr;
+            }
+
+            .stanza-right {
+                grid-column: 1;
+                grid-row: 3;
+                padding-left: 0;
+                text-align: center;
+            }
+        }
+
+        @media print {
+            body {
+                background: white;
+                color: black;
+            }
+
+            .italian {
+                color: black;
+            }
+
+            .locus {
+                color: #2563EB;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Inferno I, 13-18</h1>
+        </header>
+
+        <div class="layout">
+            <div class="image-section">
+                <img src="lines-13-18.png" alt="Capital Archive reading room at dawn">
+            </div>
+
+            <div class="stanza stanza-right">
+                <div class="line">
+                    <span class="italian">guardai in alto e vidi le sue spalle</span>
+                    <span class="separator">::</span>
+                    <span class="locus">high-backed leather chair</span>
+                </div>
+                <div class="line">
+                    <span class="italian">vestite già de' raggi del pianeta</span>
+                    <span class="separator">::</span>
+                    <span class="locus">tall arched window</span>
+                </div>
+                <div class="line">
+                    <span class="italian">che mena dritto altrui per ogne calle.</span>
+                    <span class="separator">::</span>
+                    <span class="locus">wall-mounted gas lamp</span>
+                </div>
+            </div>
+
+            <div class="stanza stanza-below">
+                <div class="stanza-inner">
+                    <div class="line">
+                        <span class="italian">Ma poi ch'i' fui al piè d'un colle giunto,</span>
+                        <span class="separator">::</span>
+                        <span class="locus">brass candlestick with pooled wax</span>
+                    </div>
+                    <div class="line">
+                        <span class="italian">là dove terminava quella valle</span>
+                        <span class="separator">::</span>
+                        <span class="locus">inkwell with wax seals</span>
+                    </div>
+                    <div class="line">
+                        <span class="italian">che m'avea di paura il cor compunto,</span>
+                        <span class="separator">::</span>
+                        <span class="locus">open filing cabinet</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

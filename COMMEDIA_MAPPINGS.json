@@ -1,0 +1,269 @@
+{
+  "meta": {
+    "project": "Commedia Memorization",
+    "created": "2025-12-26",
+    "total_lines": 14233,
+    "lines_per_image": 6,
+    "images_needed": 2372,
+    "notes": "Resonance observations documented separately in W2 memorizer's journal"
+  },
+  "images": [
+    {
+      "id": "inf-1-001",
+      "sequence": 1,
+      "cantica": "inferno",
+      "canto": 1,
+      "lines": [1, 6],
+      "tercets": [1, 2],
+      "region": "Tower of Mirado",
+      "sub_location": "Siege camp, soldier's tent",
+      "time_of_day": "midday",
+      "weather": "clear",
+      "image_file": "inferno1-1/lines-1-6.png",
+      "html_file": "inferno1-1/lines-1-6.html",
+      "adjacent": {
+        "previous": null,
+        "next": "inf-1-002"
+      },
+      "generation": {
+        "model": "nano_banana_pro",
+        "date": "2025-12-26",
+        "prompt_text": "A unified interior illustration of arriving at the Siege of Mirado, viewed as if standing in the doorway of a soldier's tent looking out at the desert encampment before the Tower. In the foreground on the left, a worn leather satchel sits open on the ground, spilling rolled maps and a brass compass with only three directions marked. Beside it in the center foreground, a clay bowl holds dried maize kernels, some scattered on the dusty canvas floor. To the right foreground, iron tent stakes are driven into clod-mud, with frayed rope still attached. In the middle distance rising toward the back, the scene opens to the encampment. On the right side, a cooking fire smolders under a blackened iron pot, steam curling upward. At center back, a siege ladder leans against stacked supply crates, its rungs worn smooth. On the left in the background, a torn regimental banner hangs limp from a pole, its insignia barely visible. Beyond all this, the Tower of Mirado hovers in the distance—steel-gray and luminous, its crown fountain catching light. The color palette draws from Densworld materials: Quarry Ochre and Clod-mud Earth for warm earth tones, Tower Steel Gray for metallic elements, Iron Gall Black for shadows and ink-like details, Desert Maize Yellow for highlights. Cartographic illustration style with clean lines, unified lighting from top-left, deep focus keeping all elements sharp. Aspect ratio 16:9. One continuous scene, not separate panels. Six distinct objects clearly separated by negative space."
+      },
+      "objects": [
+        {
+          "position": 1,
+          "description": "satchel with rolled maps",
+          "category": "containers",
+          "placement": "left foreground",
+          "line": 1,
+          "text": "Nel mezzo del cammin di nostra vita"
+        },
+        {
+          "position": 2,
+          "description": "clay bowl of maize",
+          "category": "containers",
+          "placement": "center foreground",
+          "line": 2,
+          "text": "mi ritrovai per una selva oscura,"
+        },
+        {
+          "position": 3,
+          "description": "rope coil with stake",
+          "category": "equipment",
+          "placement": "right foreground",
+          "line": 3,
+          "text": "ché la diritta via era smarrita."
+        },
+        {
+          "position": 4,
+          "description": "cooking fire with pot",
+          "category": "fire",
+          "placement": "right middle ground",
+          "line": 4,
+          "text": "Ahi quanto a dir qual era è cosa dura"
+        },
+        {
+          "position": 5,
+          "description": "siege ladder on crates",
+          "category": "military",
+          "placement": "center-right background",
+          "line": 5,
+          "text": "esta selva selvaggia e aspra e forte"
+        },
+        {
+          "position": 6,
+          "description": "torn regimental banner",
+          "category": "military",
+          "placement": "left background",
+          "line": 6,
+          "text": "che nel pensier rinova la paura!"
+        }
+      ],
+      "recall": {
+        "difficulty": null,
+        "problem_loci": [],
+        "notes": null
+      },
+      "revision_history": [],
+      "created": "2025-12-26"
+    },
+    {
+      "id": "inf-1-002",
+      "sequence": 2,
+      "cantica": "inferno",
+      "canto": 1,
+      "lines": [7, 12],
+      "tercets": [3, 4],
+      "region": "Yeller Quarry",
+      "sub_location": "Quarry rim overlooking terraced pit",
+      "time_of_day": "dusk",
+      "weather": "clear",
+      "image_file": "inferno1-1/lines-7-12.png",
+      "html_file": "inferno1-1/lines-7-12.html",
+      "adjacent": {
+        "previous": "inf-1-001",
+        "next": "inf-1-003"
+      },
+      "generation": {
+        "model": "nano_banana_pro",
+        "date": "2025-12-26",
+        "prompt_text": "A unified exterior illustration of Yeller Quarry at dusk, viewed as if standing at the rim looking down into the terraced pit. In the foreground on the left, a heavy leather-bound ledger lies open on a flat stone, its pages water-stained and curling at the edges. Beside it in the center foreground, a pickaxe rests against a wooden ore cart, its iron head catching the last light. To the right foreground, a tin lunch pail sits open, revealing a crust of bread and an apple core. In the middle distance on the right side, a gnarled yeller-oak grows from a crack in the quarry wall, its roots gripping the stone. At center back, a surveyor's tripod stands abandoned on a ledge, brass telescope tilted toward the pit floor. On the left in the background, a coil of hemp rope hangs from an iron spike driven into the rock face. The quarry descends in golden-brown terraces toward the pit floor where Prime Yeller veins catch fading light. Dust hangs in the amber dusk air. The color palette draws from Densworld materials: Quarry Ochre (#B45309) for the stone walls and earth, Knocker-bug Gold (#CA8A04) for the yeller veins and brass fittings, Iron Gall Black (#1F2937) for shadows and the ledger binding, Dead River Silt Gray (#78716C) for the dust and weathered surfaces. Cartographic illustration style with clean lines, unified lighting from top-left, deep focus keeping all elements sharp. Aspect ratio 16:9. One continuous scene, not separate panels. Six distinct objects clearly separated by negative space."
+      },
+      "objects": [
+        {
+          "position": 1,
+          "description": "open ledger with quill",
+          "category": "documents",
+          "placement": "left foreground",
+          "line": 7,
+          "text": "Tant' è amara che poco è più morte;"
+        },
+        {
+          "position": 2,
+          "description": "pickaxe",
+          "category": "tools",
+          "placement": "center foreground",
+          "line": 8,
+          "text": "ma per trattar del ben ch'i' vi trovai,"
+        },
+        {
+          "position": 3,
+          "description": "tin lunch pail",
+          "category": "food/drink",
+          "placement": "right foreground",
+          "line": 9,
+          "text": "dirò de l'altre cose ch'i' v'ho scorte."
+        },
+        {
+          "position": 4,
+          "description": "gnarled tree roots",
+          "category": "nature",
+          "placement": "right background",
+          "line": 10,
+          "text": "Io non so ben ridir com' i' v'intrai,"
+        },
+        {
+          "position": 5,
+          "description": "telescope on tripod",
+          "category": "equipment",
+          "placement": "center background",
+          "line": 11,
+          "text": "tant' era pien di sonno a quel punto"
+        },
+        {
+          "position": 6,
+          "description": "crumbling canyon floor",
+          "category": "nature",
+          "placement": "left background",
+          "line": 12,
+          "text": "che la verace via abbandonai."
+        }
+      ],
+      "recall": {
+        "difficulty": null,
+        "problem_loci": [],
+        "notes": null
+      },
+      "revision_history": [],
+      "created": "2025-12-26"
+    },
+    {
+      "id": "inf-1-003",
+      "sequence": 3,
+      "cantica": "inferno",
+      "canto": 1,
+      "lines": [13, 18],
+      "tercets": [5, 6],
+      "region": "Capital",
+      "sub_location": "Archive reading room",
+      "time_of_day": "dawn",
+      "weather": "clear",
+      "image_file": "inferno1-1/lines-13-18.png",
+      "html_file": "inferno1-1/lines-13-18.html",
+      "adjacent": {
+        "previous": "inf-1-002",
+        "next": null
+      },
+      "generation": {
+        "model": "nano_banana_pro",
+        "date": "2025-12-26",
+        "prompt_text": "A unified interior illustration of a Capital Archive reading room at dawn, viewed as if standing in the doorway looking across the long chamber toward tall windows. In the foreground on the left, a brass candlestick holder stands on a desk edge, its candle burned to a stub with wax pooled at the base. Beside it in the center foreground, an inkwell sits uncapped next to a scattered pile of official seals, their wax impressions still soft. To the right foreground, a wooden filing cabinet drawer hangs open, documents spilling onto the floor. In the middle distance on the right side, a high-backed reading chair faces away, its leather cracked and worn. At center back, a tall window lets in the first gray light, an iron latch hanging loose. On the left in the background, a wall-mounted gas lamp flickers, its glass shade darkened with soot. Morning light filters through dust motes. The archive stretches into shadow beyond the reading alcoves. The color palette draws from Densworld materials: Iron Gall Black (#1F2937) for the deep wood and shadows, Tower Steel Gray (#9CA3AF) for the morning light and metal fixtures, Quarry Ochre (#B45309) for leather and warm wood tones, Knocker-bug Gold (#CA8A04) for brass fittings and wax seals. Cartographic illustration style with clean lines, unified lighting from top-left, deep focus keeping all elements sharp. Aspect ratio 16:9. One continuous scene, not separate panels. Six distinct objects clearly separated by negative space."
+      },
+      "objects": [
+        {
+          "position": 1,
+          "description": "brass candlestick with pooled wax",
+          "category": "furniture",
+          "placement": "left foreground",
+          "line": 13,
+          "text": "Ma poi ch'i' fui al piè d'un colle giunto,"
+        },
+        {
+          "position": 2,
+          "description": "inkwell with wax seals",
+          "category": "documents",
+          "placement": "center foreground",
+          "line": 14,
+          "text": "là dove terminava quella valle"
+        },
+        {
+          "position": 3,
+          "description": "open filing cabinet",
+          "category": "furniture",
+          "placement": "right foreground",
+          "line": 15,
+          "text": "che m'avea di paura il cor compunto,"
+        },
+        {
+          "position": 4,
+          "description": "high-backed leather chair",
+          "category": "furniture",
+          "placement": "right background",
+          "line": 16,
+          "text": "guardai in alto e vidi le sue spalle"
+        },
+        {
+          "position": 5,
+          "description": "tall arched window",
+          "category": "architecture",
+          "placement": "center background",
+          "line": 17,
+          "text": "vestite già de' raggi del pianeta"
+        },
+        {
+          "position": 6,
+          "description": "wall-mounted gas lamp",
+          "category": "fire",
+          "placement": "left background",
+          "line": 18,
+          "text": "che mena dritto altrui per ogne calle."
+        }
+      ],
+      "recall": {
+        "difficulty": null,
+        "problem_loci": [],
+        "notes": null
+      },
+      "revision_history": [],
+      "created": "2025-12-26"
+    }
+  ],
+  "object_registry": {
+    "containers": ["satchel with rolled maps", "clay bowl of maize"],
+    "equipment": ["rope coil with stake", "telescope on tripod"],
+    "fire": ["cooking fire with pot", "wall-mounted gas lamp"],
+    "military": ["siege ladder on crates", "torn regimental banner"],
+    "documents": ["open ledger with quill", "inkwell with wax seals"],
+    "tools": ["pickaxe"],
+    "food/drink": ["tin lunch pail"],
+    "nature": ["gnarled tree roots", "crumbling canyon floor"],
+    "furniture": ["brass candlestick with pooled wax", "open filing cabinet", "high-backed leather chair"],
+    "architecture": ["tall arched window"]
+  },
+  "region_usage": {
+    "Tower of Mirado": ["inf-1-001"],
+    "Yeller Quarry": ["inf-1-002"],
+    "Capital": ["inf-1-003"]
+  }
+}

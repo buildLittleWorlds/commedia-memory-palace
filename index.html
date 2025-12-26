@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commedia Memory Palace</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background: #1a1a1a;
+            color: #e5e5e5;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #333;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            font-weight: normal;
+            color: #CA8A04;
+            letter-spacing: 0.1em;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            color: #9CA3AF;
+            font-style: italic;
+        }
+
+        .cantica {
+            margin-bottom: 2rem;
+        }
+
+        .cantica h2 {
+            font-size: 1.3rem;
+            color: #60A5FA;
+            margin-bottom: 1rem;
+            font-weight: normal;
+        }
+
+        .canto-list {
+            list-style: none;
+        }
+
+        .canto-list li {
+            margin-bottom: 0.5rem;
+        }
+
+        .canto-list a {
+            color: #e5e5e5;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            display: inline-block;
+            border-left: 2px solid transparent;
+            transition: all 0.2s;
+        }
+
+        .canto-list a:hover {
+            color: #CA8A04;
+            border-left-color: #CA8A04;
+            background: rgba(202, 138, 4, 0.1);
+        }
+
+        .canto-list .active {
+            color: #CA8A04;
+            border-left-color: #CA8A04;
+        }
+
+        .canto-list .coming-soon {
+            color: #6B7280;
+            cursor: default;
+        }
+
+        .canto-list .coming-soon:hover {
+            color: #6B7280;
+            border-left-color: transparent;
+            background: none;
+        }
+
+        .progress {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid #333;
+            text-align: center;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: #333;
+            border-radius: 4px;
+            margin: 1rem 0;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #CA8A04, #60A5FA);
+            width: 0.04%; /* 6 of 14233 lines */
+            transition: width 0.5s;
+        }
+
+        .progress-text {
+            color: #9CA3AF;
+            font-size: 0.9rem;
+        }
+
+        footer {
+            margin-top: 3rem;
+            text-align: center;
+            color: #6B7280;
+            font-size: 0.8rem;
+        }
+
+        footer a {
+            color: #60A5FA;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media print {
+            body {
+                background: white;
+                color: black;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Commedia Memory Palace</h1>
+            <p>Memorizing Dante through Densworld</p>
+        </header>
+
+        <div class="cantica">
+            <h2>Inferno</h2>
+            <ul class="canto-list">
+                <li><a href="inferno1-1/lines-1-6.html" class="active">Canto I, 1-6</a></li>
+                <li><span class="coming-soon">Canto I, 7-12</span></li>
+                <li><span class="coming-soon">Canto I, 13-18</span></li>
+                <li><span class="coming-soon">...</span></li>
+            </ul>
+        </div>
+
+        <div class="cantica">
+            <h2>Purgatorio</h2>
+            <ul class="canto-list">
+                <li><span class="coming-soon">Coming soon...</span></li>
+            </ul>
+        </div>
+
+        <div class="cantica">
+            <h2>Paradiso</h2>
+            <ul class="canto-list">
+                <li><span class="coming-soon">Coming soon...</span></li>
+            </ul>
+        </div>
+
+        <div class="progress">
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+            <p class="progress-text">6 of 14,233 lines (0.04%)</p>
+        </div>
+
+        <footer>
+            <p>Part of the <a href="https://github.com/buildLittleWorlds">Densworld</a> project</p>
+        </footer>
+    </div>
+</body>
+</html>
