@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inferno I, 25-30 | PLACEHOLDER</title>
+    <title>Inferno I, 25-30 | Yeller Quarry Cave</title>
     <style>
         * {
             margin: 0;
@@ -55,19 +55,6 @@
             border: 1px solid #444;
         }
 
-        .placeholder {
-            max-width: 900px;
-            width: 100%;
-            height: 400px;
-            border: 2px dashed #444;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #666;
-            font-size: 1.2rem;
-            margin: 0 auto;
-        }
-
         .stanza {
             font-size: 1rem;
             line-height: 2.2;
@@ -111,6 +98,48 @@
             font-size: 0.9rem;
         }
 
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #333;
+        }
+
+        nav a {
+            color: #9CA3AF;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: #CA8A04;
+        }
+
+        nav .prev,
+        nav .next {
+            min-width: 100px;
+        }
+
+        nav .prev {
+            text-align: left;
+        }
+
+        nav .next {
+            text-align: right;
+        }
+
+        nav .home {
+            color: #CA8A04;
+        }
+
+        .disabled {
+            color: #4B5563 !important;
+            cursor: default;
+        }
+
         @media (max-width: 1100px) {
             .layout {
                 grid-template-columns: 1fr;
@@ -142,30 +171,36 @@
 </head>
 <body>
     <div class="container">
+        <nav>
+            <a href="lines-19-24.html" class="prev">&larr; prev</a>
+            <a href="../index.html" class="home">index</a>
+            <a href="lines-31-36.html" class="next">next &rarr;</a>
+        </nav>
+
         <header>
             <h1>Inferno I, 25-30</h1>
         </header>
 
         <div class="layout">
             <div class="image-section">
-                <div class="placeholder">[ Image pending ]</div>
+                <img src="images/lines-25-30.png" alt="Maw Beast attack in Yeller Quarry cave, Year 855">
             </div>
 
             <div class="stanza stanza-right">
                 <div class="line">
+                    <span class="italian">Poi ch'èi posato un poco il corpo lasso,</span>
+                    <span class="separator">::</span>
+                    <span class="locus">Maw Beast silhouette</span>
+                </div>
+                <div class="line">
                     <span class="italian">ripresi via per la piaggia diserta,</span>
                     <span class="separator">::</span>
-                    <span class="locus">[ locus 4 ]</span>
+                    <span class="locus">Prime Yeller veins</span>
                 </div>
                 <div class="line">
                     <span class="italian">sì che 'l piè fermo sempre era 'l più basso.</span>
                     <span class="separator">::</span>
-                    <span class="locus">[ locus 5 ]</span>
-                </div>
-                <div class="line">
-                    <span class="italian">Ed ecco, quasi al cominciar de l'erta,</span>
-                    <span class="separator">::</span>
-                    <span class="locus">[ locus 6 ]</span>
+                    <span class="locus">the Boss (red hair)</span>
                 </div>
             </div>
 
@@ -174,17 +209,17 @@
                     <div class="line">
                         <span class="italian">così l'animo mio, ch'ancor fuggiva,</span>
                         <span class="separator">::</span>
-                        <span class="locus">[ locus 1 ]</span>
+                        <span class="locus">Ox dragging Truck</span>
                     </div>
                     <div class="line">
                         <span class="italian">si volse a retro a rimirar lo passo</span>
                         <span class="separator">::</span>
-                        <span class="locus">[ locus 2 ]</span>
+                        <span class="locus">shattered lantern</span>
                     </div>
                     <div class="line">
                         <span class="italian">che non lasciò già mai persona viva.</span>
                         <span class="separator">::</span>
-                        <span class="locus">[ locus 3 ]</span>
+                        <span class="locus">red-gripped trapping hook</span>
                     </div>
                 </div>
             </div>
