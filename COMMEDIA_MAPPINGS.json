@@ -183,7 +183,7 @@
       "html_file": "inferno1-1/lines-13-18.html",
       "adjacent": {
         "previous": "inf-1-002",
-        "next": null
+        "next": "inf-1-004"
       },
       "generation": {
         "model": "nano_banana_pro",
@@ -247,23 +247,105 @@
       },
       "revision_history": [],
       "created": "2025-12-26"
+    },
+    {
+      "id": "inf-1-004",
+      "sequence": 4,
+      "cantica": "inferno",
+      "canto": 1,
+      "lines": [19, 24],
+      "tercets": [7, 8],
+      "region": "Dead River",
+      "sub_location": "Ferryman's Dock",
+      "time_of_day": "night",
+      "weather": "clear",
+      "image_file": "inferno1-1/lines-19-24.png",
+      "html_file": "inferno1-1/lines-19-24.html",
+      "adjacent": {
+        "previous": "inf-1-003",
+        "next": null
+      },
+      "generation": {
+        "model": "nano_banana_pro",
+        "date": "2025-12-26",
+        "prompt_text": "A unified exterior illustration of the Ferryman's Dock on the Dead River at night, viewed as if standing on the broken concrete landing looking across the dark water. In the foreground on the left, a rusted mooring cleat juts from cracked concrete, its chain trailing into the black water. In the center foreground, a battered tin lantern sits on a coil of wet rope, its flame guttering behind soot-stained glass. To the right foreground, a Gritsmuck Crawler—a palm-sized crustacean with a segmented shell—picks at debris on the dock edge. In the middle distance on the right side, stilted shanty pylons rise from the water, their wood blackened and slick. At center back, the silhouette of the Broken Deadriver Bridge hangs half-collapsed against a starless sky, its central span sagging into the current. On the left in the background, a ferryman's punt is tied to a listing post, its pole laid across empty seats. The Dead River moves slow and dark, reflecting nothing. The air smells of silt and exhaustion. The color palette draws from Densworld materials: Dead River Silt Gray (#78716C) for water and weathered surfaces, Grimslew Scale Black (#030712) for the deepest shadows and water, Iron Gall Black (#1F2937) for rusted metal and wet wood, Quarry Ochre (#B45309) for the lantern flame and rope. Cartographic illustration style with clean lines, unified lighting from the single lantern, deep focus keeping all elements sharp. Aspect ratio 16:9. One continuous scene, not separate panels. Six distinct objects clearly separated by negative space."
+      },
+      "objects": [
+        {
+          "position": 1,
+          "description": "rusted mooring cleat",
+          "category": "equipment",
+          "placement": "left foreground",
+          "line": 19,
+          "text": "Allor fu la paura un poco queta,"
+        },
+        {
+          "position": 2,
+          "description": "tin lantern",
+          "category": "fire",
+          "placement": "center foreground",
+          "line": 20,
+          "text": "che nel lago del cor m'era durata"
+        },
+        {
+          "position": 3,
+          "description": "Gritsmuck Crawler",
+          "category": "creatures",
+          "placement": "right foreground",
+          "line": 21,
+          "text": "la notte ch'i' passai con tanta pièta."
+        },
+        {
+          "position": 4,
+          "description": "shanty pylons",
+          "category": "architecture",
+          "placement": "right background",
+          "line": 22,
+          "text": "E come quei che con lena affannata,"
+        },
+        {
+          "position": 5,
+          "description": "Broken Deadriver Bridge",
+          "category": "architecture",
+          "placement": "center background",
+          "line": 23,
+          "text": "uscito fuor del pelago a la riva,"
+        },
+        {
+          "position": 6,
+          "description": "ferryman's punt",
+          "category": "equipment",
+          "placement": "left background",
+          "line": 24,
+          "text": "si volge a l'acqua perigliosa e guata,"
+        }
+      ],
+      "recall": {
+        "difficulty": null,
+        "problem_loci": [],
+        "notes": null
+      },
+      "revision_history": [],
+      "created": "2025-12-26"
     }
   ],
   "object_registry": {
     "containers": ["satchel with rolled maps", "clay bowl of maize"],
-    "equipment": ["rope coil with stake", "telescope on tripod"],
-    "fire": ["cooking fire with pot", "wall-mounted gas lamp"],
+    "equipment": ["rope coil with stake", "telescope on tripod", "rusted mooring cleat", "ferryman's punt"],
+    "fire": ["cooking fire with pot", "wall-mounted gas lamp", "tin lantern"],
     "military": ["siege ladder on crates", "torn regimental banner"],
     "documents": ["open ledger with quill", "wax seals"],
     "tools": ["pickaxe"],
     "food/drink": ["tin lunch pail"],
     "nature": ["gnarled tree roots", "crumbling canyon floor"],
     "furniture": ["brass candlestick with pooled wax", "open filing cabinet", "high-backed leather chair"],
-    "architecture": ["tall arched window"]
+    "architecture": ["tall arched window", "shanty pylons", "Broken Deadriver Bridge"],
+    "creatures": ["Gritsmuck Crawler"]
   },
   "region_usage": {
     "Tower of Mirado": ["inf-1-001"],
     "Yeller Quarry": ["inf-1-002"],
-    "Capital": ["inf-1-003"]
+    "Capital": ["inf-1-003"],
+    "Dead River": ["inf-1-004"]
   }
 }
