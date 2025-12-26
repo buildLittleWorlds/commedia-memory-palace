@@ -165,7 +165,7 @@
         },
         {
           "position": 6,
-          "description": "crumbling canyon floor",
+          "description": "crack where spike enters rock",
           "category": "nature",
           "placement": "left background",
           "line": 12,
@@ -533,7 +533,7 @@
     "documents": ["open ledger with quill", "wax seals", "Bincher's field journal"],
     "tools": ["pickaxe", "red-gripped trapping hook"],
     "food/drink": ["tin lunch pail", "dried fish on cloth"],
-    "nature": ["gnarled tree roots", "crumbling canyon floor", "Prime Yeller veins", "crater's smooth edge"],
+    "nature": ["gnarled tree roots", "crack where spike enters rock", "Prime Yeller veins", "crater's smooth edge"],
     "furniture": ["brass candlestick with pooled wax", "open filing cabinet", "high-backed leather chair"],
     "architecture": ["tall arched window", "shanty pylons", "Broken Deadriver Bridge"],
     "creatures": ["Gritsmuck Crawler", "Maw Beast silhouette", "Metal-Beaked Finch"],

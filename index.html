@@ -12,181 +12,165 @@
         }
 
         body {
-            font-family: 'Georgia', serif;
             background: #1a1a1a;
-            color: #e5e5e5;
             min-height: 100vh;
-            padding: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 3rem 2rem;
         }
 
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
+        .journey {
+            position: relative;
+            width: 600px;
+            height: 750px;
         }
 
-        header {
-            text-align: center;
-            margin-bottom: 3rem;
-            padding-bottom: 2rem;
-            border-bottom: 1px solid #333;
-        }
-
-        header h1 {
-            font-size: 2rem;
-            font-weight: normal;
-            color: #CA8A04;
-            letter-spacing: 0.1em;
-            margin-bottom: 0.5rem;
-        }
-
-        header p {
-            color: #9CA3AF;
-            font-style: italic;
-        }
-
-        .cantica {
-            margin-bottom: 2rem;
-        }
-
-        .cantica h2 {
-            font-size: 1.3rem;
-            color: #60A5FA;
-            margin-bottom: 1rem;
-            font-weight: normal;
-        }
-
-        .canto-list {
-            list-style: none;
-        }
-
-        .canto-list li {
-            margin-bottom: 0.5rem;
-        }
-
-        .canto-list a {
-            color: #e5e5e5;
-            text-decoration: none;
-            padding: 0.5rem 1rem;
-            display: inline-block;
-            border-left: 2px solid transparent;
-            transition: all 0.2s;
-        }
-
-        .canto-list a:hover {
-            color: #CA8A04;
-            border-left-color: #CA8A04;
-            background: rgba(202, 138, 4, 0.1);
-        }
-
-        .canto-list .active {
-            color: #CA8A04;
-            border-left-color: #CA8A04;
-        }
-
-        .canto-list .coming-soon {
-            color: #6B7280;
-            cursor: default;
-        }
-
-        .canto-list .coming-soon:hover {
-            color: #6B7280;
-            border-left-color: transparent;
-            background: none;
-        }
-
-        .progress {
-            margin-top: 3rem;
-            padding-top: 2rem;
-            border-top: 1px solid #333;
-            text-align: center;
-        }
-
-        .progress-bar {
+        .path {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
-            height: 8px;
-            background: #333;
-            border-radius: 4px;
-            margin: 1rem 0;
-            overflow: hidden;
-        }
-
-        .progress-fill {
             height: 100%;
-            background: linear-gradient(90deg, #CA8A04, #60A5FA);
-            width: 0.04%; /* 6 of 14233 lines */
-            transition: width 0.5s;
+            pointer-events: none;
         }
 
-        .progress-text {
-            color: #9CA3AF;
-            font-size: 0.9rem;
+        .icon {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.2s ease;
         }
 
-        footer {
-            margin-top: 3rem;
-            text-align: center;
-            color: #6B7280;
-            font-size: 0.8rem;
+        .icon:hover {
+            transform: scale(1.1);
         }
 
-        footer a {
-            color: #60A5FA;
-            text-decoration: none;
+        .icon img {
+            max-width: 100%;
+            max-height: 100%;
+            filter: invert(1);
+            opacity: 0.9;
         }
 
-        footer a:hover {
-            text-decoration: underline;
+        .icon:hover img {
+            opacity: 1;
         }
 
-        @media print {
-            body {
-                background: white;
-                color: black;
-            }
+        /* Icon positions - organic wandering path */
+        .icon-1 {
+            top: 30px;
+            left: 80px;
+        }
+
+        .icon-2 {
+            top: 150px;
+            left: 320px;
+        }
+
+        .icon-3 {
+            top: 300px;
+            left: 120px;
+        }
+
+        .icon-4 {
+            top: 450px;
+            left: 400px;
+        }
+
+        .icon-5 {
+            top: 600px;
+            left: 160px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Commedia Memory Palace</h1>
-            <p>Memorizing Dante through Densworld</p>
-        </header>
+    <div class="journey">
+        <!-- Dotted path with arrows -->
+        <svg class="path" viewBox="0 0 600 750" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Arrow marker definition -->
+            <defs>
+                <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                    <polygon points="0 0, 10 3.5, 0 7" fill="#6B7280" />
+                </marker>
+            </defs>
 
-        <div class="cantica">
-            <h2>Inferno</h2>
-            <ul class="canto-list">
-                <li><a href="inferno1-1/lines-1-6.html" class="active">Canto I, 1-6</a></li>
-                <li><span class="coming-soon">Canto I, 7-12</span></li>
-                <li><span class="coming-soon">Canto I, 13-18</span></li>
-                <li><span class="coming-soon">...</span></li>
-            </ul>
-        </div>
+            <!-- Path from icon 1 to icon 2 -->
+            <path
+                d="M 130 110
+                   C 180 140, 260 120, 320 150
+                   Q 340 165, 360 190"
+                stroke="#6B7280"
+                stroke-width="2"
+                stroke-dasharray="8 6"
+                stroke-linecap="round"
+                marker-end="url(#arrowhead)"
+            />
 
-        <div class="cantica">
-            <h2>Purgatorio</h2>
-            <ul class="canto-list">
-                <li><span class="coming-soon">Coming soon...</span></li>
-            </ul>
-        </div>
+            <!-- Path from icon 2 to icon 3 -->
+            <path
+                d="M 320 230
+                   C 280 270, 240 280, 200 310
+                   Q 175 325, 165 340"
+                stroke="#6B7280"
+                stroke-width="2"
+                stroke-dasharray="8 6"
+                stroke-linecap="round"
+                marker-end="url(#arrowhead)"
+            />
 
-        <div class="cantica">
-            <h2>Paradiso</h2>
-            <ul class="canto-list">
-                <li><span class="coming-soon">Coming soon...</span></li>
-            </ul>
-        </div>
+            <!-- Path from icon 3 to icon 4 -->
+            <path
+                d="M 200 340
+                   C 260 380, 300 420, 360 450
+                   Q 400 470, 420 490"
+                stroke="#6B7280"
+                stroke-width="2"
+                stroke-dasharray="8 6"
+                stroke-linecap="round"
+                marker-end="url(#arrowhead)"
+            />
 
-        <div class="progress">
-            <div class="progress-bar">
-                <div class="progress-fill"></div>
-            </div>
-            <p class="progress-text">6 of 14,233 lines (0.04%)</p>
-        </div>
+            <!-- Path from icon 4 to icon 5 -->
+            <path
+                d="M 400 530
+                   C 350 570, 280 590, 240 620
+                   Q 220 635, 210 640"
+                stroke="#6B7280"
+                stroke-width="2"
+                stroke-dasharray="8 6"
+                stroke-linecap="round"
+                marker-end="url(#arrowhead)"
+            />
+        </svg>
 
-        <footer>
-            <p>Part of the <a href="https://github.com/buildLittleWorlds">Densworld</a> project</p>
-        </footer>
+        <!-- Icon 1: Tower (Lines 1-6) -->
+        <a href="inferno1-1/lines-1-6.html" class="icon icon-1">
+            <img src="inferno1-1/home-icons/tower.png" alt="Tower of Mirado">
+        </a>
+
+        <!-- Icon 2: Pickaxe (Lines 7-12) -->
+        <a href="inferno1-1/lines-7-12.html" class="icon icon-2">
+            <img src="inferno1-1/home-icons/pickaxe.png" alt="Yeller Quarry">
+        </a>
+
+        <!-- Icon 3: Arched Window (Lines 13-18) -->
+        <a href="inferno1-1/lines-13-18.html" class="icon icon-3">
+            <img src="inferno1-1/home-icons/archedwindow.png" alt="Capital Archive">
+        </a>
+
+        <!-- Icon 4: Lantern (Lines 19-24) -->
+        <a href="inferno1-1/lines-19-24.html" class="icon icon-4">
+            <img src="inferno1-1/home-icons/lantern.png" alt="Dead River Dock">
+        </a>
+
+        <!-- Icon 5: Hook (Lines 25-30) -->
+        <a href="inferno1-1/lines-25-30.html" class="icon icon-5">
+            <img src="inferno1-1/home-icons/hook.png" alt="Maw Beast Attack">
+        </a>
     </div>
 </body>
 </html>
