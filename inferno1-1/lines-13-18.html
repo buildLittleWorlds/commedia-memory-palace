@@ -98,6 +98,48 @@
             font-size: 0.9rem;
         }
 
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #333;
+        }
+
+        nav a {
+            color: #9CA3AF;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: #CA8A04;
+        }
+
+        nav .prev,
+        nav .next {
+            min-width: 100px;
+        }
+
+        nav .prev {
+            text-align: left;
+        }
+
+        nav .next {
+            text-align: right;
+        }
+
+        nav .home {
+            color: #CA8A04;
+        }
+
+        .disabled {
+            color: #4B5563 !important;
+            cursor: default;
+        }
+
         @media (max-width: 1100px) {
             .layout {
                 grid-template-columns: 1fr;
@@ -129,13 +171,19 @@
 </head>
 <body>
     <div class="container">
+        <nav>
+            <a href="lines-7-12.html" class="prev">&larr; prev</a>
+            <a href="../index.html" class="home">index</a>
+            <a href="lines-19-24.html" class="next">next &rarr;</a>
+        </nav>
+
         <header>
             <h1>Inferno I, 13-18</h1>
         </header>
 
         <div class="layout">
             <div class="image-section">
-                <img src="lines-13-18.png" alt="Capital Archive reading room at dawn">
+                <img src="images/lines-13-18.png" alt="Capital Archive reading room at dawn">
             </div>
 
             <div class="stanza stanza-right">
