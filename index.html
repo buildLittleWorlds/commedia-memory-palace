@@ -23,7 +23,7 @@
         .journey {
             position: relative;
             width: 600px;
-            height: 1050px;
+            height: 1150px;
         }
 
         .path {
@@ -95,12 +95,17 @@
             top: 900px;
             left: 140px;
         }
+
+        .icon-8 {
+            top: 1000px;
+            left: 420px;
+        }
     </style>
 </head>
 <body>
     <div class="journey">
         <!-- Dotted path with arrows -->
-        <svg class="path" viewBox="0 0 600 1050" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="path" viewBox="0 0 600 1150" fill="none" xmlns="http://www.w3.org/2000/svg">
             <!-- Arrow marker definition -->
             <defs>
                 <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
@@ -179,6 +184,18 @@
                 stroke-linecap="round"
                 marker-end="url(#arrowhead)"
             />
+
+            <!-- Path from icon 7 to icon 8 -->
+            <path
+                d="M 220 940
+                   C 280 970, 340 990, 400 1010
+                   Q 430 1020, 440 1040"
+                stroke="#6B7280"
+                stroke-width="2"
+                stroke-dasharray="8 6"
+                stroke-linecap="round"
+                marker-end="url(#arrowhead)"
+            />
         </svg>
 
         <!-- Icon 1: Tower (Lines 1-6) -->
@@ -214,6 +231,11 @@
         <!-- Icon 7: Cereal Bowl (Lines 37-42) -->
         <a href="inferno1-1/lines-37-42.html" class="icon icon-7">
             <img src="inferno1-1/home-icons/cereal-bowl.png" alt="W2 Kitchen">
+        </a>
+
+        <!-- Icon 8: Steering Wheel (Lines 43-48) -->
+        <a href="inferno1-1/lines-43-48.html" class="icon icon-8">
+            <img src="inferno1-1/home-icons/steering-wheel.png" alt="W2 Parking Lot">
         </a>
     </div>
 </body>
