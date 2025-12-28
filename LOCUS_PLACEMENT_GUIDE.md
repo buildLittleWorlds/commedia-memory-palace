@@ -111,15 +111,24 @@ If the image doesn't fit any pattern cleanly, adapt: the principle is always **f
 
 ---
 
-## HTML Layout Follows the Schema
+## HTML Layout Follows the Arrangement
 
-Because the first tercet (lines 1-3) typically maps to the **foreground**:
-- First tercet goes **below** the image
+The HTML page layout mirrors the image composition. **Foreground loci go below the image; background loci go to the right.**
 
-Because the second tercet (lines 4-6) typically maps to the **background**:
-- Second tercet goes **to the right** of the image
+### Layout by Arrangement
 
-The eye reads the bottom tercet, then follows up to the right tercet—mirroring the path through the image.
+| Arrangement | Below Image (foreground) | Right of Image (background) |
+|-------------|--------------------------|----------------------------|
+| **A (3+3)** | 3 lines (1-3) | 3 lines (4-6) |
+| **B (4+2)** | 4 lines (1-4) | 2 lines (5-6) |
+| **C (2+4)** | 2 lines (1-2) | 4 lines (3-6) |
+
+### Why This Matters
+
+The physical layout reinforces the memory path:
+- The eye naturally reads **below** first (foreground), then moves **right** (background)
+- This mirrors walking through the image: foreground left-to-right, then background right-to-left
+- The HTML structure matches the image structure
 
 ---
 

@@ -153,8 +153,16 @@ Create folder: `inferno{canto}-{image}/`
 HTML structure:
 - Header with canto/lines
 - Image centered (max-width 900px)
-- First tercet below image (foreground loci)
-- Second tercet to right of image (background loci)
+- **Foreground loci below image** (stanza-below)
+- **Background loci to right of image** (stanza-right)
+
+**Layout follows the arrangement:**
+
+| Arrangement | Below Image | Right of Image |
+|-------------|-------------|----------------|
+| A (3+3) | 3 lines | 3 lines |
+| B (4+2) | 4 lines | 2 lines |
+| C (2+4) | 2 lines | 4 lines |
 
 Each line uses `<details>/<summary>` for **quiz mode**:
 - Locus label visible by default (clickable)
