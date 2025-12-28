@@ -23,7 +23,7 @@
         .journey {
             position: relative;
             width: 600px;
-            height: 1250px;
+            height: 1350px;
         }
 
         .path {
@@ -105,12 +105,17 @@
             top: 1100px;
             left: 180px;
         }
+
+        .icon-10 {
+            top: 1200px;
+            left: 400px;
+        }
     </style>
 </head>
 <body>
     <div class="journey">
         <!-- Dotted path with arrows -->
-        <svg class="path" viewBox="0 0 600 1250" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="path" viewBox="0 0 600 1350" fill="none" xmlns="http://www.w3.org/2000/svg">
             <!-- Arrow marker definition -->
             <defs>
                 <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
@@ -213,6 +218,18 @@
                 stroke-linecap="round"
                 marker-end="url(#arrowhead)"
             />
+
+            <!-- Path from icon 9 to icon 10 -->
+            <path
+                d="M 260 1140
+                   C 300 1170, 340 1190, 380 1210
+                   Q 400 1220, 420 1240"
+                stroke="#6B7280"
+                stroke-width="2"
+                stroke-dasharray="8 6"
+                stroke-linecap="round"
+                marker-end="url(#arrowhead)"
+            />
         </svg>
 
         <!-- Icon 1: Tower (Lines 1-6) -->
@@ -258,6 +275,11 @@
         <!-- Icon 9: Spatula (Lines 49-54) -->
         <a href="inferno1-1/lines-49-54.html" class="icon icon-9">
             <img src="inferno1-1/home-icons/spatula.png" alt="W2 Kitchen Bible Study">
+        </a>
+
+        <!-- Icon 10: Bone Flyer (Lines 55-60) -->
+        <a href="inferno1-1/lines-55-60.html" class="icon icon-10">
+            <img src="inferno1-1/home-icons/bone-flyer.png" alt="Inventor's Cave Workshop">
         </a>
     </div>
 </body>

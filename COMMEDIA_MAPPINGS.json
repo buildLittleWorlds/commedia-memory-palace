@@ -711,7 +711,7 @@
       "html_file": "inferno1-1/lines-49-54.html",
       "adjacent": {
         "previous": "inf-1-008",
-        "next": null
+        "next": "inf-1-010"
       },
       "narrative_source": {
         "event_id": null,
@@ -781,21 +781,107 @@
       },
       "revision_history": [],
       "created": "2025-12-28"
+    },
+    {
+      "id": "inf-1-010",
+      "sequence": 10,
+      "cantica": "inferno",
+      "canto": 1,
+      "lines": [55, 60],
+      "tercets": [19, 20],
+      "region": "Remote Hills",
+      "sub_location": "Inventor's cave workshop",
+      "time_of_day": "unknown (cave interior)",
+      "weather": "n/a",
+      "image_file": "inferno1-1/images/lines-55-60.png",
+      "html_file": "inferno1-1/lines-55-60.html",
+      "adjacent": {
+        "previous": "inf-1-009",
+        "next": null
+      },
+      "narrative_source": {
+        "event_id": null,
+        "description": "Inventor teaching girl U to build flying gizmo in cave workshop, from Two Densworld Plotlines",
+        "actors": ["Inventor", "Girl U"],
+        "date": null
+      },
+      "generation": {
+        "model": "nano_banana_pro",
+        "date": "2025-12-28",
+        "prompt_text": "Densworld field sketch: Interior of a cave workshop in remote hill country. Amber and rust watercolor wash dominates the stone walls, with ink line work defining forms. Crosshatching in the deeper recesses suggests tunnels leading away. A hunched figure sits at a low workbench in the center foreground, tools scattered beside him — pliers, wire coils, small bone fragments. To his left in the foreground, a child's hands hold a small gizmo of hide stretched over a stick frame, learning to assemble it. To the right foreground, a clay jug sits beside a tin plate with bread crusts. In the middle distance on the left, the skeleton of a larger machine rises — a framework of bone and stretched hide, rotors suggested by curved ribs. At center back, the cave mouth opens to gray sky, light filtering in weakly. On the right in the background, coiled rope hangs from a spike driven into the rock, and below it, a leather satchel bulges with stolen parts. The cave walls rendered with crosshatch texture. Oil stains on the stone floor. The smell of hide and grease. No text, no caption, no border, no signature."
+      },
+      "objects": [
+        {
+          "position": 1,
+          "description": "hands holding stick-frame gizmo",
+          "category": "equipment",
+          "placement": "foreground left",
+          "line": 55,
+          "text": "E qual è quei che volontieri acquista,"
+        },
+        {
+          "position": 2,
+          "description": "pincer tool resting against workbench",
+          "category": "tools",
+          "placement": "foreground center-left",
+          "line": 56,
+          "text": "e giugne 'l tempo che perder lo face,"
+        },
+        {
+          "position": 3,
+          "description": "hunched figure's back at workbench",
+          "category": "figures",
+          "placement": "foreground center-right",
+          "line": 57,
+          "text": "che 'n tutti suoi pensier piange e s'attrista;"
+        },
+        {
+          "position": 4,
+          "description": "plate with bread",
+          "category": "food/drink",
+          "placement": "foreground right",
+          "line": 58,
+          "text": "tal mi fece la bestia sanza pace,"
+        },
+        {
+          "position": 5,
+          "description": "dark cave on the right",
+          "category": "architecture",
+          "placement": "background right",
+          "line": 59,
+          "text": "che, venendomi 'ncontro, a poco a poco"
+        },
+        {
+          "position": 6,
+          "description": "bone-ribbed flying machine",
+          "category": "equipment",
+          "placement": "background left",
+          "line": 60,
+          "text": "mi ripigneva là dove 'l sol tace."
+        }
+      ],
+      "recall": {
+        "difficulty": null,
+        "problem_loci": [],
+        "notes": null
+      },
+      "revision_history": [],
+      "created": "2025-12-28"
     }
   ],
   "object_registry": {
     "containers": ["satchel with rolled maps", "clay bowl of grain", "ceramic plate", "open specimen chest", "open briefcase", "metal thermos"],
-    "equipment": ["brass compass", "wooden ladder", "coiled rope on wall", "telescope on tripod", "mine cart with ore", "ink bottle", "rusted mooring cleat", "oil lantern in rope coil", "rowboat", "phone cord", "steering wheel"],
+    "equipment": ["brass compass", "wooden ladder", "coiled rope on wall", "telescope on tripod", "mine cart with ore", "ink bottle", "rusted mooring cleat", "oil lantern in rope coil", "rowboat", "phone cord", "steering wheel", "hands holding stick-frame gizmo", "bone-ribbed flying machine"],
     "fire": ["fallen lantern", "campfire"],
     "military": ["tattered flag"],
     "documents": ["open ledger with quill", "wax seals on papers", "open book with pen", "manila folders", "open Bible"],
-    "tools": ["grappling hook"],
-    "food/drink": ["dried fish on cloth", "cereal bowl", "cereal box", "skillet with eggs"],
+    "tools": ["grappling hook", "pincer tool resting against workbench"],
+    "food/drink": ["dried fish on cloth", "cereal bowl", "cereal box", "skillet with eggs", "plate with bread"],
     "nature": ["gnarled dead tree", "black void in grass", "scrub brush horizon"],
     "furniture": ["brass candlestick", "filing cabinet with open drawers", "roll-top desk", "empty chair"],
-    "architecture": ["arched window with figure", "wooden dock post", "collapsed pier", "window frame", "front doors of building", "window with landscape"],
+    "architecture": ["arched window with figure", "wooden dock post", "collapsed pier", "window frame", "front doors of building", "window with landscape", "dark cave on the right"],
     "creatures": ["dead crab", "beast silhouette in tunnel", "crow on wooden post"],
-    "figures": ["wounded figure's arm", "raised arm against wall", "figure walking toward void", "robed figure gesturing", "bent head looking down", "figure on counter", "man's head at stove"],
+    "figures": ["wounded figure's arm", "raised arm against wall", "figure walking toward void", "robed figure gesturing", "bent head looking down", "figure on counter", "man's head at stove", "hunched figure's back at workbench"],
     "clothing": ["baseball cap"]
   },
   "region_usage": {
@@ -804,6 +890,7 @@
     "Capital": ["inf-1-003"],
     "Dead River": ["inf-1-004"],
     "Focal Meadow": ["inf-1-006"],
-    "W2": ["inf-1-007", "inf-1-008", "inf-1-009"]
+    "W2": ["inf-1-007", "inf-1-008", "inf-1-009"],
+    "Remote Hills": ["inf-1-010"]
   }
 }

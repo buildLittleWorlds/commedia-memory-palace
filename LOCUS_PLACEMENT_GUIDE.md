@@ -97,6 +97,8 @@ Less common. Two objects close to viewer, four spread across the background (oft
 
 ## Identifying the Arrangement
 
+**CRITICAL: Do NOT attempt to identify loci, arrangements, or line-to-object mappings until AFTER the user has provided the generated image. Pre-planning creates bias that skews your ability to see what's actually in the image. Wait for the image first.**
+
 After generating an image:
 
 1. **Count foreground objects** — How many distinct objects are in the lower half / closer to viewer?

@@ -32,6 +32,8 @@ Follow `PRODUCTION_TEMPLATE.md`. Densworld field sketch style. Request 6 distinc
 **5. Generate the image**
 User generates in Gemini (Nano Banana Pro) and adds to `inferno1-1/images/`.
 
+**CRITICAL: Do NOT attempt to identify loci or plan line-to-object mappings until AFTER the image is generated and provided. Pre-planning creates bias that skews your ability to see what's actually in the image.**
+
 **6. Identify arrangement**
 View the image. Count foreground vs background objects:
 - **A (3+3)**: 3 foreground, 3 background

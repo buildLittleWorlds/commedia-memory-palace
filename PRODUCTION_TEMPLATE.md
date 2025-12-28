@@ -238,11 +238,14 @@ This creates variety, prevents region repetition, and maintains the arbitrarines
 2. **Read the source file** for vivid moments — the source alone provides imagery
 3. **Identify the key moment** with visual potential
 4. **Determine region** → atmospheric color
-5. **Select 6 objects** appropriate to location (check registry for repeats)
-6. **Write prompt** using natural language formula above
-7. **Generate in Gemini (Nano Banana Pro)**
-8. **Identify arrangement** (A: 3+3, B: 4+2, or C: 2+4) — see LOCUS_PLACEMENT_GUIDE.md
-9. **Assign loci** following the path for that arrangement
+5. **Write prompt** using natural language formula above — describe a scene with visual richness
+6. **Generate in Gemini (Nano Banana Pro)**
+7. **STOP. Wait for user to provide the generated image.**
+
+⚠️ **CRITICAL: Do NOT attempt steps 8-11 until AFTER the user has provided the generated image. Pre-planning loci creates bias that skews your ability to see what's actually in the image. The prompt describes a scene; the IMAGE determines the loci.**
+
+8. **View the generated image** — only now identify arrangement (A: 3+3, B: 4+2, or C: 2+4)
+9. **Assign loci** following the path for that arrangement, based on what you SEE
 10. **Save image** to appropriate folder
 11. **Update registries** (object registry, region usage)
 
