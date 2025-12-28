@@ -60,7 +60,15 @@ Copy previous HTML, update content.
 ## Steps 9-13: Icon and Registry
 
 **9. Create icon prompt**
-Select one distinctive object from the image. Write a prompt for a simple icon version.
+Select one distinctive object from the image. Use this template:
+
+```
+Simple icon of [OBJECT], pure black lines on transparent background,
+minimalist line drawing style, centered composition, clean geometric design.
+PNG with transparent background. No colors, no grays - only pure black (#000000) strokes.
+```
+
+The CSS uses `filter: invert(1)` to display icons as white on dark background.
 
 **10. Generate icon**
 User generates icon and adds to `home-icons/`.
