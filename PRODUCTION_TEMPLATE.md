@@ -4,6 +4,23 @@
 
 ---
 
+## ⚠️ CRITICAL: NO THEMATIC MATCHING ⚠️
+
+**The Dante text you are memorizing has ZERO influence on source selection or prompt content.**
+
+- DO NOT read the Dante lines and then search for matching sources
+- DO NOT choose a source because it "fits" the mood of the poetry
+- DO NOT let words like "lion," "dark wood," "fear," or "sweet season" guide your choices
+- The source is selected STOCHASTICALLY (randomly from rating 3-5)
+- The prompt comes entirely from the Densworld source — Dante provides NOTHING
+
+**Wrong:** "These lines mention a lion, so I'll find creature/predator sources..."
+**Right:** "I'll pick a random rated source and build the prompt from its imagery alone."
+
+Any resonance between text and image emerges AFTER, during memorization. Never during creation.
+
+---
+
 ## Generator
 
 **Use Gemini (Nano Banana Pro)** — produces rich crosshatching and atmospheric depth appropriate for Densworld imagery.
@@ -201,20 +218,24 @@ No text, no caption, no border, no signature.
 
 **Use SOURCE_AUDIT_LOG.json for prompt inspiration.**
 
+⚠️ **REMINDER: The Dante lines have NO influence here. Do not even think about them.**
+
 1. Filter for rating 3-5 sources (rich visual content)
-2. Randomly select from available sources
+2. **RANDOMLY select** from available sources — use a random method, not judgment
 3. Read the source file for narrative texture
 4. Extract a vivid moment with visual potential
-5. Build the prompt around that moment
+5. Build the prompt around that moment — **the source alone determines content**
 
-This creates variety and prevents region repetition.
+This creates variety, prevents region repetition, and maintains the arbitrariness principle.
 
 ---
 
 ## Workflow
 
-1. **Select source stochastically** from SOURCE_AUDIT_LOG.json (rating 4-5)
-2. **Read the source file** for vivid moments
+⚠️ **Step 1 is NOT "read the Dante lines." The Dante lines are irrelevant to prompt creation.**
+
+1. **Select source RANDOMLY** from SOURCE_AUDIT_LOG.json (rating 3-5) — do not let Dante influence this
+2. **Read the source file** for vivid moments — the source alone provides imagery
 3. **Identify the key moment** with visual potential
 4. **Determine region** → atmospheric color
 5. **Select 6 objects** appropriate to location (check registry for repeats)

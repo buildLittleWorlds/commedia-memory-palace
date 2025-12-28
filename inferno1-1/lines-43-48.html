@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inferno I, 43-48 | Parking Lot</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background: #1a1a1a;
+            color: #e5e5e5;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        header h1 {
+            font-size: 1.3rem;
+            font-weight: normal;
+            color: #CA8A04;
+            letter-spacing: 0.1em;
+        }
+
+        .layout {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            grid-template-rows: auto auto;
+            gap: 2rem;
+        }
+
+        .image-section {
+            grid-column: 1;
+            grid-row: 1;
+            text-align: center;
+        }
+
+        .image-section img {
+            max-width: 900px;
+            width: 100%;
+        }
+
+        .stanza {
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+
+        .stanza-below {
+            grid-column: 1;
+            grid-row: 2;
+            display: flex;
+            justify-content: center;
+        }
+
+        .stanza-below .stanza-inner {
+            text-align: left;
+        }
+
+        .stanza-right {
+            grid-column: 2;
+            grid-row: 1;
+            padding-top: 1rem;
+            padding-left: 1rem;
+        }
+
+        details {
+            margin: 0.8rem 0;
+        }
+
+        summary {
+            cursor: pointer;
+            color: #CA8A04;
+            font-size: 0.9rem;
+            list-style: none;
+        }
+
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        summary::before {
+            content: "▶ ";
+            font-size: 0.7rem;
+            margin-right: 0.3rem;
+        }
+
+        details[open] summary::before {
+            content: "▼ ";
+        }
+
+        .text-content {
+            margin-top: 0.3rem;
+            padding-left: 1rem;
+        }
+
+        .italian {
+            font-style: italic;
+            color: #f5f5f5;
+        }
+
+        .english {
+            color: #9CA3AF;
+            font-size: 0.85rem;
+            display: block;
+            margin-top: 0.1rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+
+        nav a {
+            color: #6B7280;
+            text-decoration: none;
+            font-size: 0.8rem;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: #CA8A04;
+        }
+
+        nav .prev,
+        nav .next {
+            min-width: 100px;
+        }
+
+        nav .prev {
+            text-align: left;
+        }
+
+        nav .next {
+            text-align: right;
+        }
+
+        nav .home {
+            color: #9CA3AF;
+        }
+
+        nav .home:hover {
+            color: #CA8A04;
+        }
+
+        .disabled {
+            color: #4B5563 !important;
+            cursor: default;
+        }
+
+        @media (max-width: 1100px) {
+            .layout {
+                grid-template-columns: 1fr;
+            }
+
+            .stanza-right {
+                grid-column: 1;
+                grid-row: 3;
+                padding-left: 0;
+                text-align: center;
+            }
+        }
+
+        @media print {
+            body {
+                background: white;
+                color: black;
+            }
+
+            .italian {
+                color: black;
+            }
+
+            summary {
+                color: #2563EB;
+            }
+
+            details {
+                display: block;
+            }
+
+            details[open] .text-content,
+            .text-content {
+                display: block !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="lines-37-42.html" class="prev">&larr; prev</a>
+            <a href="../index.html" class="home">index</a>
+            <span class="next disabled">next &rarr;</span>
+        </nav>
+
+        <header>
+            <h1>Inferno I, 43-48</h1>
+        </header>
+
+        <div class="layout">
+            <div class="image-section">
+                <img src="images/lines-43-48.png" alt="Scattered folders in a parking lot">
+            </div>
+
+            <div class="stanza stanza-right">
+                <details>
+                    <summary>metal thermos</summary>
+                    <div class="text-content">
+                        <span class="italian">ma non sì che paura non mi desse</span>
+                        <span class="english">But not so much that it did not give me fear</span>
+                    </div>
+                </details>
+                <details>
+                    <summary>steering wheel</summary>
+                    <div class="text-content">
+                        <span class="italian">la vista che m'apparve d'un leone.</span>
+                        <span class="english">The sight that unto me appeared of a lion.</span>
+                    </div>
+                </details>
+                <details>
+                    <summary>bent head looking down</summary>
+                    <div class="text-content">
+                        <span class="italian">Questi parea che contra me venisse</span>
+                        <span class="english">This one appeared that against me came</span>
+                    </div>
+                </details>
+                <details>
+                    <summary>front doors of building</summary>
+                    <div class="text-content">
+                        <span class="italian">con la test' alta e con rabbiosa fame,</span>
+                        <span class="english">With head uplifted and with ravenous hunger,</span>
+                    </div>
+                </details>
+            </div>
+
+            <div class="stanza stanza-below">
+                <div class="stanza-inner">
+                    <details>
+                        <summary>open briefcase</summary>
+                        <div class="text-content">
+                            <span class="italian">di quella fiera a la gaetta pelle</span>
+                            <span class="english">Of that wild beast with the spotted skin,</span>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>manila folders</summary>
+                        <div class="text-content">
+                            <span class="italian">l'ora del tempo e la dolce stagione;</span>
+                            <span class="english">The hour of day, and the delicious season;</span>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

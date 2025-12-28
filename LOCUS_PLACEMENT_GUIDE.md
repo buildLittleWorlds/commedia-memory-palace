@@ -176,6 +176,7 @@ Prefer objects that are spatially separated from each other. A well-spaced path 
 5. **Tight visual anchors** — The locus must be a specific point the eye can land on, not a whole scene or action. "The Boss" is a whole person—use "maze-braided red hair" or "the Boss's raised arm."
 6. **No recent repeats** — Avoid objects used within the last week (~7 images)
 7. **Long-term uniqueness** — Ideally, objects are unique across the entire project (this becomes harder over time)
+8. **Specificity over generality** — Choose the most specific name for the object. "Front doors of building" is better than "institutional building." "Steering wheel" is better than "car interior." "Bent head looking down" is better than "figure at car door." The more specific, the less likely to repeat across 2,372 images.
 
 ---
 
@@ -202,6 +203,31 @@ Image contains: open ledger (left foreground), pickaxe (center foreground), ore 
 
 ---
 
+## Example: Inferno I, 43-48 (W2 Parking Lot)
+
+Image contains: briefcase spilling papers (left foreground), manila folders fanned on ground (right foreground), metal thermos (background right near car), steering wheel visible through open door (background center-right), figure with bent head looking down (background center-left), institutional building with front doors visible (background left).
+
+**Arrangement identified:** C (2+4) — two foreground objects, four background
+
+**Walking the path:**
+
+| Line | Zone | Best Object | Reasoning |
+|------|------|-------------|-----------|
+| 43 | Foreground left | open briefcase | Clear object in correct zone |
+| 44 | Foreground right | manila folders | Distinct from briefcase, correct zone |
+| 45 | Background right | metal thermos | Specific object, not "car" or "tire" |
+| 46 | Background center-right | steering wheel | More specific than "car interior" — won't repeat |
+| 47 | Background center-left | bent head looking down | More specific than "figure" — captures the posture |
+| 48 | Background left | front doors of building | More specific than "building" — the doors are the anchor |
+
+**Specificity decisions:**
+- "Steering wheel" not "car" — cars appear often; steering wheels are specific
+- "Bent head looking down" not "figure at car door" — the posture is the visual anchor
+- "Front doors of building" not "institutional building" — the doors are what the eye lands on
+- This specificity prevents collision with future images containing cars, figures, or buildings
+
+---
+
 ## Quick Checklist
 
 Before finalizing locus assignments:
@@ -212,6 +238,7 @@ Before finalizing locus assignments:
 - [ ] Is each object visually distinct from the others in this image?
 - [ ] Is each locus a SINGLE element (passes the finger test)?
 - [ ] Have I checked `object_registry` for recent repeats?
+- [ ] **Is each object named as specifically as possible?** ("steering wheel" not "car", "front doors" not "building", "bent head" not "figure")
 - [ ] If an ideal object was skipped, is there a clear reason documented?
 
 ---

@@ -4,6 +4,23 @@
 
 ---
 
+## ⚠️ CRITICAL: NO THEMATIC MATCHING ⚠️
+
+**The Dante text has ZERO influence on source selection, prompt content, or image generation.**
+
+- DO NOT read the Dante lines and then search for matching sources
+- DO NOT choose a source because it "fits" the mood/theme of the poetry
+- DO NOT let words like "lion," "dark wood," "fear," or "sweet season" guide your choices
+- The source is selected STOCHASTICALLY (randomly from rating 3-5)
+- The prompt comes entirely from the Densworld source — Dante provides NOTHING to the image
+
+**Wrong approach:** "These lines mention a lion, so I'll find creature/predator sources..."
+**Right approach:** "I'll pick a random rated source and build the prompt from its imagery alone."
+
+Any resonance between text and image emerges AFTER the image exists, during memorization — never during creation. This is the entire point of the method.
+
+---
+
 ## The Project
 
 Memorize 14,233 lines of Italian poetry using AI-generated Densworld images as memory palaces.
@@ -46,18 +63,20 @@ Resonances between Dante and Densworld will emerge—but not by design. Document
 
 ### Step 1: Select the Lines
 
-Get the next 6 lines (2 tercets) from where you left off.
+Get the next 6 lines (2 tercets) from where you left off. **Then FORGET their content — it has no bearing on what follows.**
 
 ### Step 2: Select Source Stochastically
 
 **Use SOURCE_AUDIT_LOG.json for prompt inspiration.**
 
-1. Filter for rating 3-5 sources (rich visual content)
-2. Randomly select from available sources
-3. Read the source file for narrative texture
-4. Extract a vivid moment with visual potential
+⚠️ **The Dante lines you just read have NO influence here. Do not let them guide source selection.**
 
-This replaces manual region selection and ensures variety.
+1. Filter for rating 3-5 sources (rich visual content)
+2. **RANDOMLY select** from available sources — use a random method, not judgment
+3. Read the source file for narrative texture
+4. Extract a vivid moment with visual potential — **from the source alone**
+
+This maintains the arbitrariness principle. The source determines everything about the image.
 
 ### Step 3: Determine Region and Atmosphere
 
