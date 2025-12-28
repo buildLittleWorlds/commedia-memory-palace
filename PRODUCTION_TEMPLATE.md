@@ -321,17 +321,20 @@ These scenes need more control — the watercolor wash softens horror into mere 
 
 ---
 
-### Register 3: W2 Scenes (REALISTIC/MONOCHROMATIC)
+### Register 3: W2 Scenes (ILLUSTRATED/MUTED)
 
-W2 is *our* world — the outer world that creates and studies Densworld. When a scene is set in W2 or at the boundary between worlds, use a different visual register entirely.
+W2 is *our* world — the outer world that creates and studies Densworld. When a scene is set in W2, use the **same illustration technique** as W1 but with a muted palette and domestic subjects.
+
+**CRITICAL: W2 is NOT photorealistic.** It uses the same ink-and-wash field sketch style as W1 images. The difference is the palette (desaturated sepia/gray) and the subject matter (real-world domestic scenes).
 
 **Characteristics:**
-- Near-monochromatic palette (sepia, gray wash, muted tones)
-- Realistic proportions and domestic detail
-- Mundane objects rendered with care (phone cord, cereal box, kitchen chair)
-- The "field sketch" looseness is replaced by observational realism
+- **Same ink line work** as W1 — hand-drawn, slightly loose
+- **Same watercolor wash technique** — but desaturated (sepia, gray-brown)
+- **Paper texture visible** — it's still an illustration
+- **Crosshatching for shadows** — same as W1 images
+- Mundane objects rendered in sketch style (phone cord, cereal box, kitchen chair)
+- Window or threshold often present — showing landscape toward W1
 - Feels like a quiet moment, not an expedition record
-- Window or threshold often present — looking toward W1
 
 **When to use:**
 - Scenes set in the "real world" outside Densworld
@@ -340,22 +343,30 @@ W2 is *our* world — the outer world that creates and studies Densworld. When a
 - Any scene where the *observer's* world matters more than the observed
 
 **Visual language:**
-- Almost black-and-white, with subtle warm or cool wash
-- Tight, confident line work — not sketchy
-- Realistic anatomy and perspective
+- Ink line work with watercolor/sepia wash — NOT photorealistic
+- Loose, hand-drawn quality — same as W1 field sketches
+- Desaturated palette: gray-brown, sepia, muted tones
 - Everyday objects as anchors (phones, mugs, books, furniture)
 - Landscape visible through window suggests W1 in the distance
 
 **Example prompt language:**
 ```
-A figure sits at a kitchen table, back to the viewer, phone cord
-coiled across the wall. A cereal box and bowl on the table. Through
-the window, a distant landscape — scrubland fading to horizon.
-Near-monochromatic, sepia and gray wash. Realistic domestic detail.
-The quiet of early morning.
+Densworld field sketch: W2 kitchen interior, morning. Sepia and gray-brown
+watercolor wash dominates, with ink line work defining forms. Crosshatching
+in the wall shadows.
+
+A figure sits at a kitchen table, back to the viewer, phone cord coiled
+across the wall. A cereal bowl and spoon on the table. Through the window,
+a distant landscape — scrubland fading to horizon. An empty chair opposite.
+A cereal box on the table edge.
+
+Illustrated style with visible line work and paper texture. Muted,
+desaturated palette. The quiet of early morning.
+
+No text, no caption, no border, no signature.
 ```
 
-**The W2 mood:** Stillness, observation, the weight of the ordinary. W2 scenes are about someone *looking at* or *thinking about* Densworld, not being inside it.
+**The W2 mood:** Stillness, observation, the weight of the ordinary. W2 scenes are about someone *looking at* or *thinking about* Densworld, not being inside it. But they are still **illustrations**, not photographs.
 
 ---
 
@@ -441,9 +452,9 @@ Before writing a prompt, ask two questions:
 | W1 pressing darkness, threat | Register 2 | Tight crosshatching, black voids |
 | W1 creature or monster | Register 2 | Silhouette only, against darkness |
 | W1 light that behaves wrong | Register 2 | Describe wrongness, don't render literally |
-| W2 domestic/mundane | Register 3 | Monochromatic, realistic detail |
-| W2 observer looking toward W1 | Register 3 | Sepia/gray wash, window/threshold |
-| Boundary between worlds | Register 3 | Quiet realism, W1 in distance |
+| W2 domestic/mundane | Register 3 | **Ink + muted wash** (NOT photorealistic) |
+| W2 observer looking toward W1 | Register 3 | **Ink + sepia wash**, window/threshold |
+| Boundary between worlds | Register 3 | **Illustrated**, muted palette, W1 in distance |
 
 ---
 
@@ -454,6 +465,7 @@ Before writing a prompt, ask two questions:
 | 2025-12-28 | Created for Commedia project, adapted from Bible mnemonic template |
 | 2025-12-28 | Added scene type distinctions (atmospheric vs. horror), creature rendering rules, darkness/bioluminescence guidance |
 | 2025-12-28 | Added Register 3 (W2 scenes) — realistic/monochromatic style for outer-world and boundary scenes |
+| 2025-12-28 | **Fixed Register 3** — W2 uses same ink+wash illustration style as W1, just muted palette. NOT photorealistic. |
 
 ---
 

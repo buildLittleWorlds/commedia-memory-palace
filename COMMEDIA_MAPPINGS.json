@@ -625,7 +625,7 @@
       "html_file": "inferno1-1/lines-43-48.html",
       "adjacent": {
         "previous": "inf-1-007",
-        "next": null
+        "next": "inf-1-009"
       },
       "narrative_source": {
         "event_id": null,
@@ -695,6 +695,92 @@
       },
       "revision_history": [],
       "created": "2025-12-28"
+    },
+    {
+      "id": "inf-1-009",
+      "sequence": 9,
+      "cantica": "inferno",
+      "canto": 1,
+      "lines": [49, 54],
+      "tercets": [17, 18],
+      "region": "W2",
+      "sub_location": "Kitchen, men's Bible study",
+      "time_of_day": "morning",
+      "weather": "clear",
+      "image_file": "inferno1-1/images/lines-49-54.png",
+      "html_file": "inferno1-1/lines-49-54.html",
+      "adjacent": {
+        "previous": "inf-1-008",
+        "next": null
+      },
+      "narrative_source": {
+        "event_id": null,
+        "description": "W2 scene: Men's Bible study in kitchen, discussing camel/needle passage. From northo/054_camel_needles.txt",
+        "actors": [],
+        "date": null
+      },
+      "generation": {
+        "model": "nano_banana_pro",
+        "date": "2025-12-28",
+        "prompt_text": "Densworld field sketch: W2 kitchen interior, morning. Sepia and gray-brown watercolor wash dominates, with ink line work defining forms. Crosshatching in the wall shadows and cabinet surfaces. A man stands at the stove with his back partially turned, reaching toward a cast-iron skillet where eggs sizzle. A metal spatula rests on the counter beside the stove. To the right, another figure sits on the counter edge, legs dangling, a Cardinals baseball cap set crown-up beside him. An open Bible lies flat on the counter between them, pages dog-eared, spine cracked. Through the window above the sink, a distant landscape — scrubland fading to flat horizon. Illustrated style with visible ink line work, crosshatching, and paper texture. Muted, desaturated sepia palette. The casual intimacy of morning conversation. No text, no caption, no border, no signature."
+      },
+      "objects": [
+        {
+          "position": 1,
+          "description": "skillet with eggs",
+          "category": "food/drink",
+          "placement": "foreground left",
+          "line": 49,
+          "text": "Ed una lupa, che di tutte brame"
+        },
+        {
+          "position": 2,
+          "description": "open Bible",
+          "category": "documents",
+          "placement": "foreground center",
+          "line": 50,
+          "text": "sembiava carca ne la sua magrezza,"
+        },
+        {
+          "position": 3,
+          "description": "baseball cap",
+          "category": "clothing",
+          "placement": "foreground right",
+          "line": 51,
+          "text": "e molte genti fé già viver grame,"
+        },
+        {
+          "position": 4,
+          "description": "figure on counter",
+          "category": "figures",
+          "placement": "background right",
+          "line": 52,
+          "text": "questa mi porse tanto di gravezza"
+        },
+        {
+          "position": 5,
+          "description": "window with landscape",
+          "category": "architecture",
+          "placement": "background center",
+          "line": 53,
+          "text": "con la paura ch'uscia di sua vista,"
+        },
+        {
+          "position": 6,
+          "description": "man's head at stove",
+          "category": "figures",
+          "placement": "background left",
+          "line": 54,
+          "text": "ch'io perdei la speranza de l'altezza."
+        }
+      ],
+      "recall": {
+        "difficulty": null,
+        "problem_loci": [],
+        "notes": null
+      },
+      "revision_history": [],
+      "created": "2025-12-28"
     }
   ],
   "object_registry": {
@@ -702,14 +788,15 @@
     "equipment": ["brass compass", "wooden ladder", "coiled rope on wall", "telescope on tripod", "mine cart with ore", "ink bottle", "rusted mooring cleat", "oil lantern in rope coil", "rowboat", "phone cord", "steering wheel"],
     "fire": ["fallen lantern", "campfire"],
     "military": ["tattered flag"],
-    "documents": ["open ledger with quill", "wax seals on papers", "open book with pen", "manila folders"],
+    "documents": ["open ledger with quill", "wax seals on papers", "open book with pen", "manila folders", "open Bible"],
     "tools": ["grappling hook"],
-    "food/drink": ["dried fish on cloth", "cereal bowl", "cereal box"],
+    "food/drink": ["dried fish on cloth", "cereal bowl", "cereal box", "skillet with eggs"],
     "nature": ["gnarled dead tree", "black void in grass", "scrub brush horizon"],
     "furniture": ["brass candlestick", "filing cabinet with open drawers", "roll-top desk", "empty chair"],
-    "architecture": ["arched window with figure", "wooden dock post", "collapsed pier", "window frame", "front doors of building"],
+    "architecture": ["arched window with figure", "wooden dock post", "collapsed pier", "window frame", "front doors of building", "window with landscape"],
     "creatures": ["dead crab", "beast silhouette in tunnel", "crow on wooden post"],
-    "figures": ["wounded figure's arm", "raised arm against wall", "figure walking toward void", "robed figure gesturing", "bent head looking down"]
+    "figures": ["wounded figure's arm", "raised arm against wall", "figure walking toward void", "robed figure gesturing", "bent head looking down", "figure on counter", "man's head at stove"],
+    "clothing": ["baseball cap"]
   },
   "region_usage": {
     "Tower of Mirado": ["inf-1-001"],
@@ -717,6 +804,6 @@
     "Capital": ["inf-1-003"],
     "Dead River": ["inf-1-004"],
     "Focal Meadow": ["inf-1-006"],
-    "W2": ["inf-1-007", "inf-1-008"]
+    "W2": ["inf-1-007", "inf-1-008", "inf-1-009"]
   }
 }
