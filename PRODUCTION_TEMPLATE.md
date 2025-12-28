@@ -256,11 +256,183 @@ Before using an image for mnemonic work:
 
 ---
 
+## Scene Types: Three Visual Registers
+
+**Critical distinction:** Different scenes require different visual treatments. Know which register you're working in.
+
+### Register 1: W1 Atmospheric/Liminal (WATERCOLOR WASH)
+
+These scenes benefit from the full field sketch treatment:
+- Open landscapes (quarry rim, grassland, desert)
+- Interiors with ambient light (archive, tent, camp)
+- Scenes where the *mood* is the subject
+- Geometric voids meant to be seen (the black hole in the grass)
+
+**Characteristics:**
+- Watercolor wash dominates
+- Loose, hand-drawn line work
+- Paper texture visible
+- Edges can bleed
+- Figures as silhouettes work well
+- The "bruised" dens-edge sky, the amber quarry wash — these are the goal
+
+**Example regions:** Yeller Quarry rim, Mirado Desert, Dens edge grassland, Capital Archive
+
+---
+
+### Register 2: W1 Darkness/Horror (TIGHT CROSSHATCHING)
+
+These scenes need more control — the watercolor wash softens horror into mere atmosphere:
+- Underground/tunnel scenes with threat
+- Dead River (the wrongness is in the *absence* of proper light)
+- Any scene with creatures or monsters
+- Scenes where darkness itself is the subject
+
+**Characteristics:**
+- Tighter line work with crosshatching for shadow
+- Darkness should be *black*, not washed
+- Light sources should "stop at edges" — specify this explicitly
+- Creatures as SILHOUETTES ONLY — never fully rendered
+- The void dominates; you should feel it pressing in
+- Objects need crisp edges for findability against the dark
+
+**Example regions:** Eastern Tunnels, Dead River, deep Dens interior
+
+---
+
+### Register 3: W2 Scenes (REALISTIC/MONOCHROMATIC)
+
+W2 is *our* world — the outer world that creates and studies Densworld. When a scene is set in W2 or at the boundary between worlds, use a different visual register entirely.
+
+**Characteristics:**
+- Near-monochromatic palette (sepia, gray wash, muted tones)
+- Realistic proportions and domestic detail
+- Mundane objects rendered with care (phone cord, cereal box, kitchen chair)
+- The "field sketch" looseness is replaced by observational realism
+- Feels like a quiet moment, not an expedition record
+- Window or threshold often present — looking toward W1
+
+**When to use:**
+- Scenes set in the "real world" outside Densworld
+- Moments of contact between W2 observer and W1 subject
+- Domestic/mundane settings that frame Densworld study
+- Any scene where the *observer's* world matters more than the observed
+
+**Visual language:**
+- Almost black-and-white, with subtle warm or cool wash
+- Tight, confident line work — not sketchy
+- Realistic anatomy and perspective
+- Everyday objects as anchors (phones, mugs, books, furniture)
+- Landscape visible through window suggests W1 in the distance
+
+**Example prompt language:**
+```
+A figure sits at a kitchen table, back to the viewer, phone cord
+coiled across the wall. A cereal box and bowl on the table. Through
+the window, a distant landscape — scrubland fading to horizon.
+Near-monochromatic, sepia and gray wash. Realistic domestic detail.
+The quiet of early morning.
+```
+
+**The W2 mood:** Stillness, observation, the weight of the ordinary. W2 scenes are about someone *looking at* or *thinking about* Densworld, not being inside it.
+
+---
+
+## Rendering Creatures and Threats
+
+**CRITICAL: Densworld creatures should be glimpsed, not displayed.**
+
+### Wrong (over-rendered)
+```
+A beast leaps from the tunnel mouth, lion-like mane bristling,
+muscular body caught mid-spring, claws extended.
+```
+This produces a visible monster — like concept art for a video game. Not Densworld.
+
+### Right (silhouette/suggestion)
+```
+A shape emerges from the tunnel darkness — bristling, wrong,
+four-legged but not like any animal. Only its silhouette is
+visible against the deeper black of the tunnel mouth.
+```
+This keeps the horror in the *not-quite-seeing*. The viewer's imagination fills in what the darkness hides.
+
+### The Silhouette Principle
+
+For any creature or threat:
+- Describe it as a "shape" or "silhouette"
+- Place it against something darker (tunnel mouth, void, shadow)
+- Use words like "emerging," "glimpsed," "suggested"
+- NEVER describe anatomical details (mane, claws, eyes)
+- The darkness is the threat; the creature is evidence of the darkness
+
+---
+
+## Rendering Darkness and Bioluminescence
+
+### Dead River: What "Glows Wrong" Means
+
+The Dead River's bioluminescence should NOT be rendered as:
+- Bright green patches on the water surface
+- Visible glowing pools
+- Swamp-like luminescence
+
+The "wrongness" is that light doesn't behave normally. Render it as:
+- Black water that should reflect but doesn't
+- A faint sick glow that illuminates nothing
+- Light that exists but fails to spread
+- The *absence* of expected reflection/illumination
+
+**Prompt language for Dead River:**
+```
+The water is black — not reflecting the lantern, not catching
+the sky. A faint green-sick glow exists somewhere beneath the
+surface but illuminates nothing. The light behaves wrong here.
+```
+
+### Tunnel/Cave Darkness
+
+For underground scenes, darkness should press in:
+- Firelight/lantern light "stops at edges" — include this phrase
+- The tunnel mouth should be "deeper black than the walls"
+- Crosshatching should suggest void, not just shadow
+- The darkness should feel like a presence, not an absence
+
+**Prompt language for tunnels:**
+```
+The lantern light stops at the edges of its small circle,
+refusing to spread. The tunnel mouth behind opens into
+deeper black — not shadow but void. The darkness breathes.
+```
+
+---
+
+## Quick Reference: Scene Type Decision
+
+Before writing a prompt, ask two questions:
+1. **Which world is this scene in?** (W1 interior, or W2 looking in?)
+2. **Is the subject what you see, or what you can't see?**
+
+| If the scene is... | Register | Style |
+|--------------------|----------|-------|
+| W1 landscape, mood, atmosphere | Register 1 | Watercolor wash, loose lines |
+| W1 visible geometric void | Register 1 | Watercolor wash |
+| W1 pressing darkness, threat | Register 2 | Tight crosshatching, black voids |
+| W1 creature or monster | Register 2 | Silhouette only, against darkness |
+| W1 light that behaves wrong | Register 2 | Describe wrongness, don't render literally |
+| W2 domestic/mundane | Register 3 | Monochromatic, realistic detail |
+| W2 observer looking toward W1 | Register 3 | Sepia/gray wash, window/threshold |
+| Boundary between worlds | Register 3 | Quiet realism, W1 in distance |
+
+---
+
 ## Revision Log
 
 | Date | Change |
 |------|--------|
 | 2025-12-28 | Created for Commedia project, adapted from Bible mnemonic template |
+| 2025-12-28 | Added scene type distinctions (atmospheric vs. horror), creature rendering rules, darkness/bioluminescence guidance |
+| 2025-12-28 | Added Register 3 (W2 scenes) — realistic/monochromatic style for outer-world and boundary scenes |
 
 ---
 
