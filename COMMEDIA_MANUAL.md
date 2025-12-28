@@ -52,7 +52,7 @@ Get the next 6 lines (2 tercets) from where you left off.
 
 **Use SOURCE_AUDIT_LOG.json for prompt inspiration.**
 
-1. Filter for rating 4-5 sources (rich visual content)
+1. Filter for rating 3-5 sources (rich visual content)
 2. Randomly select from available sources
 3. Read the source file for narrative texture
 4. Extract a vivid moment with visual potential
@@ -242,7 +242,7 @@ _commedia-mnemonics/
 
 When helping with this project:
 
-1. **Use SOURCE_AUDIT_LOG.json** for stochastic source selection—filter for rating 4-5
+1. **Use SOURCE_AUDIT_LOG.json** for stochastic source selection—filter for rating 3-5
 2. **Write natural language prompts**, not JSON—see PRODUCTION_TEMPLATE.md
 3. **Don't number loci** in prompts—the model gets these wrong
 4. **Don't match Dante to Densworld thematically**—the mapping is arbitrary

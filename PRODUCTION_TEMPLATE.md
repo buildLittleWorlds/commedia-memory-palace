@@ -201,7 +201,7 @@ No text, no caption, no border, no signature.
 
 **Use SOURCE_AUDIT_LOG.json for prompt inspiration.**
 
-1. Filter for rating 4-5 sources (rich visual content)
+1. Filter for rating 3-5 sources (rich visual content)
 2. Randomly select from available sources
 3. Read the source file for narrative texture
 4. Extract a vivid moment with visual potential
