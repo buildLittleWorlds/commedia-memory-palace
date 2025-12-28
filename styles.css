@@ -63,6 +63,7 @@ header h1 {
 
 .stanza-below .stanza-inner {
     text-align: left;
+    min-width: 450px;
 }
 
 .stanza-right {
@@ -70,6 +71,7 @@ header h1 {
     grid-row: 1;
     padding-top: 1rem;
     padding-left: 1rem;
+    min-width: 380px;
 }
 
 details {
@@ -168,6 +170,11 @@ nav .home:hover {
         grid-row: 3;
         padding-left: 0;
         text-align: center;
+        min-width: unset;
+    }
+
+    .stanza-below .stanza-inner {
+        min-width: unset;
     }
 }
 
