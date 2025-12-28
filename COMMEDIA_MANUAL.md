@@ -28,10 +28,7 @@ Do NOT choose locations or objects based on what's happening in Dante. The "dark
 
 **Why this matters:** If the mnemonic scaffold "made sense," you'd be tempted to reconstruct through reasoning instead of through the image. Reasoning is slow and error-prone. The arbitrary image, once learned, is simply *there*—immediate, stable, independent of interpretation.
 
-**When selecting locations, choose based on:**
-- Variety (haven't used this region recently)
-- Visual interest (rich in potential objects)
-- Avoiding repetition (check `region_usage` in the JSON)
+**When selecting sources, use stochastic selection** from SOURCE_AUDIT_LOG.json rather than deliberate thematic matching.
 
 ### 2. The W1/W2 Framework
 
@@ -51,42 +48,27 @@ Resonances between Dante and Densworld will emerge—but not by design. Document
 
 Get the next 6 lines (2 tercets) from where you left off.
 
-### Step 2: Choose a Region
+### Step 2: Select Source Stochastically
 
-Check `COMMEDIA_MAPPINGS.json` → `region_usage` to see what's been used recently. Pick something different.
+**Use SOURCE_AUDIT_LOG.json for prompt inspiration.**
 
-**Available regions (37 total):**
+1. Filter for rating 4-5 sources (rich visual content)
+2. Randomly select from available sources
+3. Read the source file for narrative texture
+4. Extract a vivid moment with visual potential
 
-| Primary Regions | Character |
-|-----------------|-----------|
-| Capital | Institutional, bureaucratic |
-| The Dens | Primordial, unstable |
-| Tower of Mirado | Silver architecture, siege history |
-| Yeller Quarry | Industrial, dangerous |
-| Densmok | High instability |
-| Northtown/Northo | Austere, religious |
-| Capeast | Eastern expansion, grimslew territory |
-| Dead River | Underground connections |
-| Mirado Sticks | "Rehab town," country club |
-| Mirado Desert | Post-linguistic, surrounding Tower |
+This replaces manual region selection and ensures variety.
 
-Plus 12+ sub-regions, 8 specialized anomalies, and W2 locations.
+### Step 3: Determine Region and Atmosphere
 
-### Step 3: Choose a Sub-location
+Based on the selected source:
+- Identify the region (Capital, Dens, Quarry, etc.)
+- Determine atmospheric color (see PRODUCTION_TEMPLATE.md)
+- Note time of day and weather for the scene
 
-Be specific. Not just "Capital" but "Archive reading room" or "Senate gallery balcony."
+### Step 4: Select 6 Objects
 
-### Step 4: Choose Time/Weather
-
-Vary these for distinctiveness:
-- **Time:** dawn, midday, dusk, night
-- **Weather:** clear, overcast, storm
-
-### Step 5: Select 6 Objects
-
-Each line gets one object. Distribute them spatially:
-- 3 in foreground (left, center, right)
-- 3 in background (right, center, left)
+Each line gets one object. The image generator will arrange them naturally—you'll identify the arrangement after generation.
 
 **Check `object_registry` in the JSON** to avoid reusing objects. Categorize new objects:
 - containers
@@ -102,53 +84,58 @@ Each line gets one object. Distribute them spatially:
 
 **Spacing principle:** Don't cluster similar objects. If position 1 has a container, position 2 should be something else.
 
-### Step 6: Write the Prompt
+### Step 5: Write the Prompt
 
-Use natural language, not JSON. Describe the scene as if standing in a doorway looking in.
+**Use natural language, not JSON.** See PRODUCTION_TEMPLATE.md for the full formula.
 
-**Template:**
+Basic structure:
 ```
-A unified interior/exterior illustration of [location], viewed as if standing in [vantage point] looking [direction].
+Densworld field sketch: [LOCATION AND TIME]. [ATMOSPHERIC COLOR] watercolor
+wash dominates the [sky/walls/space], with ink line work defining forms.
 
-In the foreground on the left, [object 1 with detail]. Beside it in the center foreground, [object 2 with detail]. To the right foreground, [object 3 with detail].
+[SCENE DESCRIPTION — weave objects into the narrative naturally]
 
-In the middle distance/background, [object 4] on the right side. At center back, [object 5]. On the left in the background, [object 6].
+[BACKGROUND ELEMENTS — rendered softer, part of atmosphere]
 
-[Optional: distant landmark or atmospheric detail]
-
-The color palette draws from Densworld materials: [2-4 colors from visual_materials_catalog.csv with hex codes].
-
-Cartographic illustration style with clean lines, unified lighting from top-left, deep focus keeping all elements sharp. Aspect ratio 16:9. One continuous scene, not separate panels. Six distinct objects clearly separated by negative space.
+No text, no caption, no border, no signature.
 ```
 
 **Do NOT request:**
-- Numbered loci (Nano Banana gets these wrong)
+- Numbered loci (model gets these wrong)
 - Grid layouts or panels
+- "Zoomed details" or "close-up" sections (causes segmented images)
 - Compass showing East (Densworld has no East)
 
-### Step 7: Generate the Image
+### Step 6: Generate the Image
 
-Use Nano Banana Pro (Gemini 3 Pro Image with Thinking enabled).
+Use **Gemini (Nano Banana Pro)** with Thinking enabled.
 
-### Step 8: Evaluate
+### Step 7: Identify the Arrangement
 
-Check:
-- All 6 objects visible and distinct?
-- Objects well-separated spatially?
-- Unified scene (not panels)?
-- Densworld visual vocabulary present?
+After generation, count foreground and background objects:
 
-If problems, regenerate or note in `recall.problem_loci`.
+- **A (3+3):** 3 foreground, 3 background — classic zigzag
+- **B (4+2):** 4 foreground, 2 background — foreground-heavy
+- **C (2+4):** 2 foreground, 4 background — background-heavy
+
+See LOCUS_PLACEMENT_GUIDE.md for the path through each arrangement.
+
+### Step 8: Assign Loci
+
+Follow the path for the identified arrangement. Each locus must be:
+- **One element only** (passes the finger test)
+- **Spatially separated** from adjacent loci
+- **Visually distinct** from other objects in the image
 
 ### Step 9: Create the HTML Page
 
-Create folder: `_mnemonic-system/inferno{canto}-{image}/`
+Create folder: `inferno{canto}-{image}/`
 
 HTML structure:
 - Header with canto/lines
 - Image centered (max-width 900px)
-- First tercet below image (left-justified, centered as block)
-- Second tercet to right of image
+- First tercet below image (foreground loci)
+- Second tercet to right of image (background loci)
 
 Each line uses `<details>/<summary>` for **quiz mode**:
 - Locus label visible by default (clickable)
@@ -174,6 +161,7 @@ Add new entry to `COMMEDIA_MAPPINGS.json`:
 - Update `adjacent` links (previous image's `next`, new image's `previous`)
 - Add objects to `object_registry` by category
 - Add image ID to `region_usage`
+- Note the source from SOURCE_AUDIT_LOG.json
 
 ### Step 11: Memorize
 
@@ -216,22 +204,23 @@ From `visual_materials_catalog.csv`:
 | Objects clustered | Specify placements explicitly |
 | Compass shows East | Mention "three directions" or omit |
 | Numbered loci wrong | Don't request numbers |
-| Region repetition | Check `region_usage` before selecting |
+| Region repetition | Use stochastic source selection |
 | Object repetition | Check `object_registry` before selecting |
+| Segmented images | Don't use "zoomed details" or "close-up" sections |
 
 ---
 
 ## File Structure
 
 ```
-_mnemonic-system/
+_commedia-mnemonics/
 ├── COMMEDIA_MANUAL.md          ← This file
 ├── COMMEDIA_PROJECT.md         ← Project overview and principles
 ├── COMMEDIA_MAPPINGS.json      ← Tracking data (images, objects, regions)
-├── W1_W2_REFRAME.md            ← W1/W2 framework documentation
-├── ART_OF_MEMORY_SUMMARY.md    ← Memory palace techniques
+├── PRODUCTION_TEMPLATE.md      ← Prompt formula and examples
+├── LOCUS_PLACEMENT_GUIDE.md    ← Flexible arrangements (A/B/C)
+├── SOURCE_AUDIT_LOG.json       ← Stochastic source selection (1,968 rated files)
 ├── EXPERIMENT_LOG.md           ← Image generation experiments
-├── LOCUS_PLACEMENT_GUIDE.md    ← Zone-based object placement
 ├── _prompt-sources/
 │   └── PROMPT_ENRICHMENT_PROCESS.md  ← How to enrich prompts with lore
 ├── _source-texts/
@@ -253,15 +242,17 @@ _mnemonic-system/
 
 When helping with this project:
 
-1. **Check the JSON first** before suggesting regions or objects—avoid repetition
-2. **Write natural language prompts**, not JSON—Nano Banana handles these better
+1. **Use SOURCE_AUDIT_LOG.json** for stochastic source selection—filter for rating 4-5
+2. **Write natural language prompts**, not JSON—see PRODUCTION_TEMPLATE.md
 3. **Don't number loci** in prompts—the model gets these wrong
 4. **Don't match Dante to Densworld thematically**—the mapping is arbitrary
-5. **Track everything** in `COMMEDIA_MAPPINGS.json` after each image
-6. **Create HTML pages** with the established layout (image centered, tercet 1 below, tercet 2 right)
-7. **Categorize objects** when adding to the registry
-8. **Update adjacent links** when adding new images
-9. **Leave resonance observations** for the W2 journal—don't put them in the JSON
+5. **Identify arrangement after generation** (A: 3+3, B: 4+2, C: 2+4)—see LOCUS_PLACEMENT_GUIDE.md
+6. **Each locus is ONE element**—passes the finger test
+7. **Track everything** in `COMMEDIA_MAPPINGS.json` after each image
+8. **Create HTML pages** with the established layout (image centered, tercet 1 below, tercet 2 right)
+9. **Categorize objects** when adding to the registry
+10. **Update adjacent links** when adding new images
+11. **Leave resonance observations** for the W2 journal—don't put them in the JSON
 
 ---
 
@@ -281,14 +272,16 @@ This is narrative material, not tracking data. It becomes part of the world.
 
 **To add a new image:**
 1. Get next 6 lines
-2. Check `region_usage` → pick unused/underused region
-3. Check `object_registry` → pick 6 new objects (varied categories)
-4. Write natural language prompt (no JSON, no numbers)
-5. Generate in Nano Banana Pro
-6. Create folder + HTML page
-7. Update JSON (new image entry, object registry, region usage, adjacent links)
+2. Select source stochastically from SOURCE_AUDIT_LOG.json (rating 4-5)
+3. Read source file, extract vivid moment
+4. Write natural language prompt (see PRODUCTION_TEMPLATE.md)
+5. Generate in Gemini (Nano Banana Pro)
+6. Identify arrangement (A/B/C) after generation
+7. Assign loci following the path (see LOCUS_PLACEMENT_GUIDE.md)
+8. Create folder + HTML page
+9. Update JSON (new image entry, object registry, region usage, adjacent links)
 
-**JSON location:** `_mnemonic-system/COMMEDIA_MAPPINGS.json`
+**JSON location:** `COMMEDIA_MAPPINGS.json`
 
 **Image ID format:** `inf-{canto}-{sequence}` (e.g., `inf-1-001`, `inf-1-002`)
 
@@ -296,10 +289,11 @@ This is narrative material, not tracking data. It becomes part of the world.
 
 ---
 
-*Last updated: 2025-12-26*
+*Last updated: 2025-12-28*
 
 ---
 
 ## Changelog
 
+- **2025-12-28:** Integrated SOURCE_AUDIT_LOG.json for stochastic source selection; updated to use PRODUCTION_TEMPLATE.md and flexible arrangements (A/B/C); replaced JSON prompts with natural language
 - **2025-12-26:** Added quiz mode (details/summary) to all HTML pages; added Longfellow translations; extracted source texts to `_source-texts/`; documented LOCUS_PLACEMENT_GUIDE.md and PROMPT_ENRICHMENT_PROCESS.md
