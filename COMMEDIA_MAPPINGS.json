@@ -40,47 +40,41 @@
         {
           "position": 1,
           "description": "satchel with rolled maps",
-          "category": "containers",
           "placement": "foreground left",
           "line": 1,
           "text": "Nel mezzo del cammin di nostra vita"
         },
         {
           "position": 2,
-          "description": "brass compass",
-          "category": "equipment",
-          "placement": "foreground center-left",
+          "description": "clay bowl of grain",
+          "placement": "foreground center",
           "line": 2,
           "text": "mi ritrovai per una selva oscura,"
         },
         {
           "position": 3,
-          "description": "clay bowl of grain",
-          "category": "containers",
-          "placement": "foreground center-right",
+          "description": "ladder",
+          "placement": "foreground right",
           "line": 3,
           "text": "ché la diritta via era smarrita."
         },
         {
           "position": 4,
-          "description": "ceramic plate",
-          "category": "containers",
-          "placement": "foreground right",
+          "description": "pot over fire",
+          "placement": "background right",
           "line": 4,
           "text": "Ahi quanto a dir qual era è cosa dura"
         },
         {
           "position": 5,
-          "description": "wooden ladder",
-          "category": "equipment",
-          "placement": "background right",
+          "description": "tattered flag",
+          "placement": "background center",
           "line": 5,
           "text": "esta selva selvaggia e aspra e forte"
         },
         {
           "position": 6,
-          "description": "tattered flag",
-          "category": "military",
+          "description": "tower",
           "placement": "background left",
           "line": 6,
           "text": "che nel pensier rinova la paura!"
@@ -126,7 +120,6 @@
         {
           "position": 1,
           "description": "coiled rope on wall",
-          "category": "equipment",
           "placement": "foreground left",
           "line": 7,
           "text": "Tant' è amara che poco è più morte;"
@@ -134,7 +127,6 @@
         {
           "position": 2,
           "description": "telescope on tripod",
-          "category": "equipment",
           "placement": "foreground center",
           "line": 8,
           "text": "ma per trattar del ben ch'i' vi trovai,"
@@ -142,7 +134,6 @@
         {
           "position": 3,
           "description": "open ledger with quill",
-          "category": "documents",
           "placement": "foreground right",
           "line": 9,
           "text": "dirò de l'altre cose ch'i' v'ho scorte."
@@ -150,7 +141,6 @@
         {
           "position": 4,
           "description": "gnarled dead tree",
-          "category": "nature",
           "placement": "background right",
           "line": 10,
           "text": "Io non so ben ridir com' i' v'intrai,"
@@ -158,7 +148,6 @@
         {
           "position": 5,
           "description": "open specimen chest",
-          "category": "containers",
           "placement": "background center",
           "line": 11,
           "text": "tant' era pien di sonno a quel punto"
@@ -166,7 +155,6 @@
         {
           "position": 6,
           "description": "mine cart with ore",
-          "category": "equipment",
           "placement": "background left",
           "line": 12,
           "text": "che la verace via abbandonai."
@@ -212,7 +200,6 @@
         {
           "position": 1,
           "description": "brass candlestick",
-          "category": "furniture",
           "placement": "foreground left",
           "line": 13,
           "text": "Ma poi ch'i' fui al piè d'un colle giunto,"
@@ -220,7 +207,6 @@
         {
           "position": 2,
           "description": "ink bottle",
-          "category": "equipment",
           "placement": "foreground center",
           "line": 14,
           "text": "là dove terminava quella valle"
@@ -228,7 +214,6 @@
         {
           "position": 3,
           "description": "wax seals on papers",
-          "category": "documents",
           "placement": "foreground right",
           "line": 15,
           "text": "che m'avea di paura il cor compunto,"
@@ -236,7 +221,6 @@
         {
           "position": 4,
           "description": "filing cabinet with open drawers",
-          "category": "furniture",
           "placement": "background right",
           "line": 16,
           "text": "guardai in alto e vidi le sue spalle"
@@ -244,7 +228,6 @@
         {
           "position": 5,
           "description": "arched window with figure",
-          "category": "architecture",
           "placement": "background center",
           "line": 17,
           "text": "vestite già de' raggi del pianeta"
@@ -252,7 +235,6 @@
         {
           "position": 6,
           "description": "roll-top desk",
-          "category": "furniture",
           "placement": "background left",
           "line": 18,
           "text": "che mena dritto altrui per ogne calle."
@@ -298,7 +280,6 @@
         {
           "position": 1,
           "description": "rusted mooring cleat",
-          "category": "equipment",
           "placement": "foreground left",
           "line": 19,
           "text": "Allor fu la paura un poco queta,"
@@ -306,7 +287,6 @@
         {
           "position": 2,
           "description": "oil lantern in rope coil",
-          "category": "fire",
           "placement": "foreground center",
           "line": 20,
           "text": "che nel lago del cor m'era durata"
@@ -314,7 +294,6 @@
         {
           "position": 3,
           "description": "dead crab",
-          "category": "creatures",
           "placement": "foreground right",
           "line": 21,
           "text": "la notte ch'i' passai con tanta pièta."
@@ -322,7 +301,6 @@
         {
           "position": 4,
           "description": "wooden dock post",
-          "category": "architecture",
           "placement": "background right",
           "line": 22,
           "text": "E come quei che con lena affannata,"
@@ -330,7 +308,6 @@
         {
           "position": 5,
           "description": "rowboat",
-          "category": "equipment",
           "placement": "background center",
           "line": 23,
           "text": "uscito fuor del pelago a la riva,"
@@ -338,7 +315,6 @@
         {
           "position": 6,
           "description": "collapsed pier",
-          "category": "architecture",
           "placement": "background left",
           "line": 24,
           "text": "si volge a l'acqua perigliosa e guata,"
@@ -384,7 +360,6 @@
         {
           "position": 1,
           "description": "fallen lantern",
-          "category": "fire",
           "placement": "foreground left",
           "line": 25,
           "text": "così l'animo mio, ch'ancor fuggiva,"
@@ -392,7 +367,6 @@
         {
           "position": 2,
           "description": "campfire",
-          "category": "fire",
           "placement": "foreground center",
           "line": 26,
           "text": "si volse a retro a rimirar lo passo"
@@ -400,7 +374,6 @@
         {
           "position": 3,
           "description": "grappling hook",
-          "category": "tools",
           "placement": "foreground right",
           "line": 27,
           "text": "che non lasciò già mai persona viva."
@@ -408,7 +381,6 @@
         {
           "position": 4,
           "description": "wounded figure's arm",
-          "category": "figures",
           "placement": "background right",
           "line": 28,
           "text": "Poi ch'èi posato un poco il corpo lasso,"
@@ -416,7 +388,6 @@
         {
           "position": 5,
           "description": "beast silhouette in tunnel",
-          "category": "creatures",
           "placement": "background center",
           "line": 29,
           "text": "ripresi via per la piaggia diserta,"
@@ -424,7 +395,6 @@
         {
           "position": 6,
           "description": "raised arm against wall",
-          "category": "figures",
           "placement": "background left",
           "line": 30,
           "text": "sì che 'l piè fermo sempre era 'l più basso."
@@ -470,7 +440,6 @@
         {
           "position": 1,
           "description": "open book with pen",
-          "category": "documents",
           "placement": "foreground left",
           "line": 31,
           "text": "Ed ecco, quasi al cominciar de l'erta,"
@@ -478,7 +447,6 @@
         {
           "position": 2,
           "description": "dried fish on cloth",
-          "category": "food/drink",
           "placement": "foreground center",
           "line": 32,
           "text": "una lonza leggera e presta molto,"
@@ -486,7 +454,6 @@
         {
           "position": 3,
           "description": "crow on wooden post",
-          "category": "creatures",
           "placement": "foreground right",
           "line": 33,
           "text": "che di pel macolato era coverta;"
@@ -494,7 +461,6 @@
         {
           "position": 4,
           "description": "figure walking toward void",
-          "category": "figures",
           "placement": "background right",
           "line": 34,
           "text": "e non mi si partia dinanzi al volto,"
@@ -502,7 +468,6 @@
         {
           "position": 5,
           "description": "black void in grass",
-          "category": "nature",
           "placement": "background center",
           "line": 35,
           "text": "anzi 'mpediva tanto il mio cammino,"
@@ -510,7 +475,6 @@
         {
           "position": 6,
           "description": "robed figure gesturing",
-          "category": "figures",
           "placement": "background left",
           "line": 36,
           "text": "ch'i' fui per ritornar più volte vòlto."
@@ -556,7 +520,6 @@
         {
           "position": 1,
           "description": "window frame",
-          "category": "architecture",
           "placement": "foreground left",
           "line": 37,
           "text": "Temp' era dal principio del mattino,"
@@ -564,7 +527,6 @@
         {
           "position": 2,
           "description": "cereal bowl",
-          "category": "food/drink",
           "placement": "foreground center-left",
           "line": 38,
           "text": "e 'l sol montava 'n sù con quelle stelle"
@@ -572,7 +534,6 @@
         {
           "position": 3,
           "description": "phone cord",
-          "category": "equipment",
           "placement": "foreground center-right",
           "line": 39,
           "text": "ch'eran con lui quando l'amor divino"
@@ -580,7 +541,6 @@
         {
           "position": 4,
           "description": "cereal box",
-          "category": "food/drink",
           "placement": "foreground right",
           "line": 40,
           "text": "di quella fiera a la gaetta pelle"
@@ -588,7 +548,6 @@
         {
           "position": 5,
           "description": "scrub brush horizon",
-          "category": "nature",
           "placement": "background right",
           "line": 41,
           "text": "mosse di prima quelle cose belle;"
@@ -596,7 +555,6 @@
         {
           "position": 6,
           "description": "empty chair",
-          "category": "furniture",
           "placement": "background left",
           "line": 42,
           "text": "sì ch'a bene sperar m'era cagione"
@@ -642,7 +600,6 @@
         {
           "position": 1,
           "description": "open briefcase",
-          "category": "containers",
           "placement": "foreground left",
           "line": 43,
           "text": "di quella fiera a la gaetta pelle"
@@ -650,7 +607,6 @@
         {
           "position": 2,
           "description": "manila folders",
-          "category": "documents",
           "placement": "foreground right",
           "line": 44,
           "text": "l'ora del tempo e la dolce stagione;"
@@ -658,7 +614,6 @@
         {
           "position": 3,
           "description": "metal thermos",
-          "category": "containers",
           "placement": "background right",
           "line": 45,
           "text": "ma non sì che paura non mi desse"
@@ -666,7 +621,6 @@
         {
           "position": 4,
           "description": "steering wheel",
-          "category": "equipment",
           "placement": "background center-right",
           "line": 46,
           "text": "la vista che m'apparve d'un leone."
@@ -674,7 +628,6 @@
         {
           "position": 5,
           "description": "bent head looking down",
-          "category": "figures",
           "placement": "background center-left",
           "line": 47,
           "text": "Questi parea che contra me venisse"
@@ -682,7 +635,6 @@
         {
           "position": 6,
           "description": "front doors of building",
-          "category": "architecture",
           "placement": "background left",
           "line": 48,
           "text": "con la test' alta e con rabbiosa fame,"
@@ -728,7 +680,6 @@
         {
           "position": 1,
           "description": "skillet with eggs",
-          "category": "food/drink",
           "placement": "foreground left",
           "line": 49,
           "text": "Ed una lupa, che di tutte brame"
@@ -736,7 +687,6 @@
         {
           "position": 2,
           "description": "open Bible",
-          "category": "documents",
           "placement": "foreground center",
           "line": 50,
           "text": "sembiava carca ne la sua magrezza,"
@@ -744,7 +694,6 @@
         {
           "position": 3,
           "description": "baseball cap",
-          "category": "clothing",
           "placement": "foreground right",
           "line": 51,
           "text": "e molte genti fé già viver grame,"
@@ -752,7 +701,6 @@
         {
           "position": 4,
           "description": "figure on counter",
-          "category": "figures",
           "placement": "background right",
           "line": 52,
           "text": "questa mi porse tanto di gravezza"
@@ -760,7 +708,6 @@
         {
           "position": 5,
           "description": "window with landscape",
-          "category": "architecture",
           "placement": "background center",
           "line": 53,
           "text": "con la paura ch'uscia di sua vista,"
@@ -768,7 +715,6 @@
         {
           "position": 6,
           "description": "man's head at stove",
-          "category": "figures",
           "placement": "background left",
           "line": 54,
           "text": "ch'io perdei la speranza de l'altezza."
@@ -814,7 +760,6 @@
         {
           "position": 1,
           "description": "hands holding stick-frame gizmo",
-          "category": "equipment",
           "placement": "foreground left",
           "line": 55,
           "text": "E qual è quei che volontieri acquista,"
@@ -822,7 +767,6 @@
         {
           "position": 2,
           "description": "pincer tool resting against workbench",
-          "category": "tools",
           "placement": "foreground center-left",
           "line": 56,
           "text": "e giugne 'l tempo che perder lo face,"
@@ -830,7 +774,6 @@
         {
           "position": 3,
           "description": "hunched figure's back at workbench",
-          "category": "figures",
           "placement": "foreground center-right",
           "line": 57,
           "text": "che 'n tutti suoi pensier piange e s'attrista;"
@@ -838,7 +781,6 @@
         {
           "position": 4,
           "description": "plate with bread",
-          "category": "food/drink",
           "placement": "foreground right",
           "line": 58,
           "text": "tal mi fece la bestia sanza pace,"
@@ -846,7 +788,6 @@
         {
           "position": 5,
           "description": "dark cave on the right",
-          "category": "architecture",
           "placement": "background right",
           "line": 59,
           "text": "che, venendomi 'ncontro, a poco a poco"
@@ -854,7 +795,6 @@
         {
           "position": 6,
           "description": "bone-ribbed flying machine",
-          "category": "equipment",
           "placement": "background left",
           "line": 60,
           "text": "mi ripigneva là dove 'l sol tace."
@@ -869,21 +809,6 @@
       "created": "2025-12-28"
     }
   ],
-  "object_registry": {
-    "containers": ["satchel with rolled maps", "clay bowl of grain", "ceramic plate", "open specimen chest", "open briefcase", "metal thermos"],
-    "equipment": ["brass compass", "wooden ladder", "coiled rope on wall", "telescope on tripod", "mine cart with ore", "ink bottle", "rusted mooring cleat", "oil lantern in rope coil", "rowboat", "phone cord", "steering wheel", "hands holding stick-frame gizmo", "bone-ribbed flying machine"],
-    "fire": ["fallen lantern", "campfire"],
-    "military": ["tattered flag"],
-    "documents": ["open ledger with quill", "wax seals on papers", "open book with pen", "manila folders", "open Bible"],
-    "tools": ["grappling hook", "pincer tool resting against workbench"],
-    "food/drink": ["dried fish on cloth", "cereal bowl", "cereal box", "skillet with eggs", "plate with bread"],
-    "nature": ["gnarled dead tree", "black void in grass", "scrub brush horizon"],
-    "furniture": ["brass candlestick", "filing cabinet with open drawers", "roll-top desk", "empty chair"],
-    "architecture": ["arched window with figure", "wooden dock post", "collapsed pier", "window frame", "front doors of building", "window with landscape", "dark cave on the right"],
-    "creatures": ["dead crab", "beast silhouette in tunnel", "crow on wooden post"],
-    "figures": ["wounded figure's arm", "raised arm against wall", "figure walking toward void", "robed figure gesturing", "bent head looking down", "figure on counter", "man's head at stove", "hunched figure's back at workbench"],
-    "clothing": ["baseball cap"]
-  },
   "region_usage": {
     "Tower of Mirado": ["inf-1-001"],
     "Yeller Quarry": ["inf-1-002", "inf-1-005"],

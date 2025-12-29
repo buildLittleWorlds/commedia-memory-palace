@@ -89,19 +89,9 @@ Based on the selected source:
 
 Each line gets one object. The image generator will arrange them naturally—you'll identify the arrangement after generation.
 
-**Check `object_registry` in the JSON** to avoid reusing objects. Categorize new objects:
-- containers
-- equipment
-- fire
-- military
-- furniture
-- nature
-- documents
-- creatures
-- food/drink
-- tools
+**Check previous images in the JSON** to avoid reusing objects.
 
-**Spacing principle:** Don't cluster similar objects. If position 1 has a container, position 2 should be something else.
+**Spacing principle:** Don't cluster similar objects. Vary object types across positions.
 
 ### Step 5: Write the Prompt
 
@@ -186,7 +176,6 @@ Each line uses `<details>/<summary>` for **quiz mode**:
 Add new entry to `COMMEDIA_MAPPINGS.json`:
 - Increment `sequence`
 - Update `adjacent` links (previous image's `next`, new image's `previous`)
-- Add objects to `object_registry` by category
 - Add image ID to `region_usage`
 - Note the source from SOURCE_AUDIT_LOG.json
 
@@ -232,7 +221,7 @@ From `visual_materials_catalog.csv`:
 | Compass shows East | Mention "three directions" or omit |
 | Numbered loci wrong | Don't request numbers |
 | Region repetition | Use stochastic source selection |
-| Object repetition | Check `object_registry` before selecting |
+| Object repetition | Check recent images before selecting |
 | Segmented images | Don't use "zoomed details" or "close-up" sections |
 
 ---
@@ -277,9 +266,8 @@ When helping with this project:
 6. **Each locus is ONE element**—passes the finger test
 7. **Track everything** in `COMMEDIA_MAPPINGS.json` after each image
 8. **Create HTML pages** with the established layout (image centered, tercet 1 below, tercet 2 right)
-9. **Categorize objects** when adding to the registry
-10. **Update adjacent links** when adding new images
-11. **Leave resonance observations** for the W2 journal—don't put them in the JSON
+9. **Update adjacent links** when adding new images
+10. **Leave resonance observations** for the W2 journal—don't put them in the JSON
 
 ---
 
